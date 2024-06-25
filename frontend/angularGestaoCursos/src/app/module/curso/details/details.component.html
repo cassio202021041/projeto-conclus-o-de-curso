@@ -1,0 +1,29 @@
+<app-header></app-header>
+<app-loading *ngIf="carregar"></app-loading>
+<button class="voltar" [routerLink]="['']"><img src="../../../../assets/images/voltar.png" alt=""></button>
+<main *ngIf="curso">
+    <div class="card">
+      <img [src]="curso.imagem" alt="{{ curso.clube }}">
+      <div>
+        <h3>{{ curso.clube }}</h3>
+        <h4>{{ curso.ano }}</h4>
+        <h5>R$ {{ curso.valor }}</h5>
+        <label for="quantidade">Quantidade desejada:</label>
+        <input
+          id="quantidade"
+          [(ngModel)]="quantidade"
+          type="number"
+          placeholder="1"
+          max="{{ this.curso.quantidade }}"
+        >
+        <button class="add" (click)="addCursoCarrinho()" [routerLink]="['/shopping_cart']">
+          <h1>Adicionar ao carrinho</h1>
+         </button>
+      </div>
+
+    </div>
+    <button class="carrinho" [routerLink]="['/shopping_cart']">
+      <img src="../../../../assets/images/carrinho-de-compras.png" alt="Carrinho">
+    </button>
+  </main>
+  <app-footer class="footer"></app-footer>

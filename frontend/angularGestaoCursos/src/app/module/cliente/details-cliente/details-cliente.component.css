@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+main{
+    width: 100%;
+    margin-top: 2vw;
+    font-family: 'Lexend', sans-serif;
+    display: block;
+}
+.infos{
+    width:fit-content;
+    margin: 0 auto;
+}
+.venda{
+    width: 80%vw;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.venda_infos{
+    font-size: 1vw;
+    margin-left: 1vw;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.venda_infos h5{
+    color: #1f796c;
+}
+
+button{
+    width: 20vw;
+    height: 3vw;
+    color: white;
+    font-size: 1.5vw;
+    background-color: #F4483C;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    border-radius: 3vw;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .infos{
+        font-size: 4vw;
+    }
+    .venda_infos{
+        font-size: 3vw;
+    }
+    button{
+        width: 35vw;
+        height: 10vw;
+        font-size: 3vw;
+        margin-bottom: 2vw;
+        margin-left: 30vw;
+        border-radius: 3vw;
+    }
+
+}

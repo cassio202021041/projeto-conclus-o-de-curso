@@ -1,0 +1,75 @@
+<app-header></app-header>
+<app-loading *ngIf="carregar"></app-loading>
+<body>
+    <main>
+        <div class="edit">
+            <div class="principal">
+                <h1>Atualizar Venda</h1>
+                <form [formGroup]="form">
+                        <h1>Nome: {{ this.venda.cliente.nome }}</h1>
+                        <h1>CPF: {{ this.venda.cliente.cpf }}</h1>
+                        <h1>Valor da compra: {{ this.venda.valor }}</h1>
+                    <div class="atributos">
+                        <label for="cliente_id">ID do cliente:</label>
+                        <input
+                            formControlName="cliente_id"
+                            id="cliente_id"
+                            [(ngModel)]="this.venda.cliente.id"
+                            type="number">
+                        <div *ngIf="f['cliente_id'].touched && f['cliente_id'].invalid" class="alert">
+                            <div *ngIf="f['cliente_id'].errors?.['required']">(Preencha o campo acima)</div>
+                        </div>
+                    </div>
+
+                    <div class="atributos">
+                        <label for="cliente_id">Data da compra:</label>
+                        <input
+                            formControlName="data_compra"
+                            id="data_compra"
+                            [(ngModel)]="this.venda.dia_venda"
+                            type="text">
+                        <div *ngIf="f['data_compra'].touched && f['data_compra'].invalid" class="alert">
+                            <div *ngIf="f['data_compra'].errors?.['required']">(Preencha o campo acima)</div>
+                        </div>
+                    </div>
+                    <button (click)="atualizaCompra()" [disabled]="!form.valid">Atualizar</button>
+
+                    <button [routerLink]="['/vendas/'+venda.id+'/add_curso']">Adicionar Curso</button>
+
+                    <div class="flex">
+                        <div class="card" *ngFor="let curso of venda.cursoVendas">
+                            <img [src]="curso.curso.imagem" alt="{{ curso.curso.clube }}">
+                                <h4>{{ curso.curso.clube }}</h4>
+                                <h5>R$ {{ curso.valor }}</h5>
+                                <h4>Quantidade: {{curso.quantidade}}</h4>
+                                <button (click)="quantidadeCurso(curso)">Quantidade</button>
+                                <button (click)="removerCurso(curso)">Remover</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<div class="mostrar" *ngIf="atualizar">
+    <div class="adicionar">
+      <button class="close" (click)="fechar()">Fechar</button>
+          <img [src]="this.cursoVenda.curso.imagem" alt="{{ this.cursoVenda.curso.clube }}">
+        <h3>{{ this.cursoVenda.curso.clube }}</h3>
+        <h4>{{ this.cursoVenda.curso.ano }}</h4>
+        <h5>R$ {{ this.cursoVenda.curso.valor }}</h5>
+
+        <div class = "quadrado">
+        <label for="quantidade">Quantidade:</label>
+        <input
+          id="quantidade"
+          [(ngModel)]="quantidade"
+          type="number"
+          placeholder="{{this.cursoVenda.quantidade}}"
+          max="{{ this.cursoVenda.curso.quantidade }}"
+        >
+        <button (click)="AtualizaCursosVenda()">Atualizar quantidade</button>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

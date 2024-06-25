@@ -1,0 +1,83 @@
+<app-header></app-header>
+<app-loading *ngIf="carregar"></app-loading>
+<body>
+    <main>
+    <div class="principal">
+        <h1>Nova curso</h1>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="atributos">
+                <label for="clube">Clube - Home/Away:</label>
+                <input
+                    formControlName="clube"
+                    id="clube"
+                    type="text"
+                    placeholder="ex: Barcelona - Home">
+                <div *ngIf="f['clube'].touched && f['clube'].invalid" class="alert">
+                    <div *ngIf="f['clube'].errors?.['required']">(Preencha o campo acima)</div>
+                </div>
+            </div>
+            <div class="atributos">
+                <label for="clube">País - Continente:</label>
+                <input
+                    formControlName="pais"
+                    id="pais"
+                    type="text"
+                    placeholder="ex: Brasil - America">
+                <div *ngIf="f['pais'].touched && f['pais'].invalid" class="alert">
+                    <div *ngIf="f['pais'].errors?.['required']">(Preencha o campo acima)</div>
+                </div>
+            </div>
+            <div class="atributos">
+                <label for="ano">Ano:</label>
+                <input
+                    formControlName="ano"
+                    id="number"
+                    type="text">
+                <div *ngIf="f['ano'].touched && f['ano'].invalid" class="alert">
+                    <div *ngIf="f['ano'].errors?.['required']">(Preencha o campo acima)</div>
+                </div>
+            </div>
+            <div class="atributos">
+                <label for="quantidade">Quantidade:</label>
+                <input
+                    formControlName="quantidade"
+                    id="quantidade"
+                    type="number">
+                <div *ngIf="f['quantidade'].touched && f['quantidade'].invalid" class="alert">
+                    <div *ngIf="f['quantidade'].errors?.['required']">(Preencha o campo acima)</div>
+                </div>
+            </div>
+            <div class="atributos">
+                <label for="valor">Valor:</label>
+                <input
+                    formControlName="valor"
+                    id="valor"
+                    type="number" >
+                <div *ngIf="f['valor'].touched && f['valor'].invalid" class="alert">
+                    <div *ngIf="f['valor'].errors?.['required']">(Preencha o campo acima)</div>
+                </div>
+            </div>
+            <div class="atributos">
+                <div class="input-image">
+                    <label for="fileInput" class="custom-file-upload">
+                        Escolher arquivo da imagem
+                    </label>
+                    <input  id="fileInput" type="file" (change)="handleFileInput($event)" hidden>
+                </div>
+                <input
+                    [(ngModel)]="imagemFormulario"
+                    formControlName="imagem"
+                    id="imagem"
+                    type="text"
+                    hidden>
+                <div *ngIf="imagemFormulario" class="create-image">
+                    <div><img [src]="imagemFormulario" alt="Curso"></div>
+                </div>
+            </div>
+            <button type="submit" [disabled]="!form.valid">Adicionar</button>
+        </form>
+    </div>
+
+    </main>
+</body>
+<app-footer class="footer"></app-footer>

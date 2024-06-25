@@ -1,0 +1,23 @@
+<app-header></app-header>
+<main>
+    <div class="compra">
+        <label>
+            <h3>Digite o número da compra:</h3>
+            <input type="number" placeholder="" [(ngModel)]="id">
+        </label>
+        <button (click)="enviar()">Enviar</button>
+    </div>
+    <div class="pedido" *ngIf="this.venda">
+        <h1>Seu pedido já está a caminho!</h1>
+        <div class="card" *ngFor="let curso of cursos">
+            <img [src]="curso.curso.imagem" alt="{{ curso.curso.clube }}">
+            <div class="infos">
+                <h3>{{ curso.curso.clube }}</h3>
+                <h4>{{ curso.curso.ano }}</h4>
+                <h4>R$ {{ curso.valor }}</h4>
+                <h4>Quantidade: {{ curso.quantidade }}</h4>
+            </div>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>

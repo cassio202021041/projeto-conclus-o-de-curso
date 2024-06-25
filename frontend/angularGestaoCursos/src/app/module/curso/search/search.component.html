@@ -1,0 +1,16 @@
+<app-header></app-header>
+<app-loading *ngIf="carregar"></app-loading>
+<main>
+    <div class="card" *ngFor="let curso of cursos">
+      <a [routerLink]="['/details', curso.id]">
+        <img [src]="curso.imagem" alt="{{ curso.clube }}">
+      </a>
+      <h3>{{ curso.clube }}</h3>
+      <h4>{{ curso.ano }}</h4>
+      <h5>R$ {{ curso.valor }}</h5>
+    </div>
+    <button class="carrinho" [routerLink]="['/shopping_cart']">
+      <img src="../../../../assets/images/carrinho-de-compras.png" alt="Carrinho">
+    </button>
+  </main>
+<app-footer></app-footer>

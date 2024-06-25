@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 4vw;
+    font-family: 'Lexend', sans-serif;
+}
+.hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+.agrupa:hover{
+    color: #F4483C;
+}
+@media (min-width: 768px) {
+    .card {
+        width: 18vw;
+        height: fit-content;
+        font-family: 'Lexend', sans-serif;
+        border-radius: 10px;
+        margin-left: 5vw;
+        margin-bottom: 8vw;
+        font-size: 1.2vw;
+        margin: 3vw;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .card img{
+        width: 15vw;
+        height: 15vw;
+        margin-top: 1vw;
+    }
+    .card h3{
+        font-size: 1em;
+    }
+    .card h4{
+        font-size: 1em;
+        color: gray;
+    }
+    .card h5{
+        font-size: 1em;
+        color: #1f796c;
+    }
+    .card > * {
+        margin-left: 1vw; 
+    }
+
+    .carrinho {
+        position: fixed; 
+        bottom: 2vw; 
+        right: 1vw; 
+        width: 10vw; 
+        height: 10vw;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+        z-index: 999; 
+      }
+      .carrinho img{
+        width: 5vw;
+        height: 5vw;
+    
+      }
+
+}
+
+
+.filtro{
+    width: 100%;
+}
+.filtro > *{
+    margin-left:1vw;
+}
+.home_picture{
+    margin: auto;
+    height: 40vw;
+    width: 70vw;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 2vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.imagens{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.imagens button{
+    width: 5vw;
+    height: 5vw;
+    margin:auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.titulo{
+    margin:auto;
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+}
+.escudo{
+    height: 5vw;
+    width: auto;
+    margin-left: 1vw;
+}
+.faixa_vermelha{
+    width: 100%;
+    height: fit-content;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.comprar{
+    width: 20vw;
+    height: 4vw;
+    background: linear-gradient(45deg, #F4483C, #000000, #F4483C, #000000,  #F4483C, #000000);
+    font-size: 2vw;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.comprar img{
+    height: 3vw;
+    margin-right: 2vw;
+}
+.right{
+    width: 3vw;
+    height: auto;
+    
+}
+.left{
+    width: 3vw;
+    height: auto;
+    transform: rotate(-180deg);
+
+}
+.circle{
+    align-items: center;
+    height: 8vw;
+    width: 10vw;
+}
+.circle >  *{
+    
+}
+.circle img{
+    width: 8vw;
+    margin-top: 1vw;
+    
+}
+.agrupa h4{
+    margin-left: 0vw;
+    font-size: 2vw;
+    
+}
+.agrupa{
+  width: fit-content;
+}
+
+
+.faixa_vermelha button{
+    background-color: white;
+    border: none;
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.margem{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 7vw;
+}
+.carrinho{
+    background-color: #fff;
+}
+@media (max-width: 767px) {
+    .card {
+      width: 40%; 
+      height: fit-content; 
+      border-radius: 20px;
+      margin-left: 5vw; 
+      margin-bottom:5vw; 
+      font-size: 1vw; 
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    .card img {
+      width: 80%; 
+      height: auto; 
+      margin-top: 3vw;
+    }
+    .card h3{
+        font-size: 4vw;
+    }
+    .card h4{
+        font-size: 4vw;
+        color: gray;
+    }
+    .card h5{
+        font-size: 4vw;
+        color: #1f796c;
+    }
+    .card > * {
+        margin-left: 3vw; 
+    }
+     .carrinho {
+
+        position: fixed; 
+        bottom: 7vw;
+        right: 1vw; 
+        width: 20vw; 
+        height: 20vw;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+        z-index: 999; 
+      }
+      .carrinho img{
+        width: 10vw;
+        height: 10vw;
+    
+      }
+      .filtro{
+        margin-bottom: 7vw;
+      }
+      .titulo h3{
+        font-size: 4.5vw;
+      }
+      .titulo img{
+        width: 7vw;
+        height: auto;
+      }
+      .imagens img{
+        width: 95%;
+      }
+      .imagens button{
+        width: 9vw;
+        height: 7vw;
+        border-radius: 10px;
+      }
+      .imagens button img{
+        width: 5vw;
+        height: auto;
+        margin-left: 0vw;
+        margin-right: 0vw;
+      }
+      .colecao{
+        width: 30vw;
+        height: auto;
+        font-size: 3vw;
+      }
+      .faixa_vermelha{
+        height: 30vw;
+      }
+      .margem button{
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        padding: 1vw;
+        
+      
+       
+      }
+      .margem button img{
+        width: 3.5vw;
+        height: auto;
+      }
+    
+    .circle{
+        align-items: center;
+        height: 8vw;
+        width: 14vw;
+    }
+    .circle img{
+        width: 13vw;
+        margin-top: 1vw;
+        
+    }
+    .agrupa h4{
+        margin-top: 6vw;
+        margin-left: 2vw;
+        font-size: 2.5vw;
+        
+        
+    }
+    .home_titulo{
+        font-size: 4vw;
+    }
+
+  }

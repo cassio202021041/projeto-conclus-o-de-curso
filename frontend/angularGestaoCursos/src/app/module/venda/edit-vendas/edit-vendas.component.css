@@ -1,0 +1,13 @@
+button{
+    width: 15vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    
+}
+@media (max-width:767px){
+    button{
+        width: 25vw;
+        height: 10vw;
+        font-size: 3vw;
+    }
+}
