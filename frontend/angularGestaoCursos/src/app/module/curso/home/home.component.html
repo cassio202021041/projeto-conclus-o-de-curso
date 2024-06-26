@@ -24,16 +24,16 @@
       <button class="hover" [disabled]="!passadorDireita" (click)="addContadorPaises()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
     </div>
   </div>
-  <h3 class="titulo home_titulo">Nossas camisas</h3>
+  <h3 class="titulo home_titulo">Cusos 2024</h3>
   <div class="filtro">
     <label for="opcoes">Filtro:</label>
     <select id="opcoes" [(ngModel)]="opcaoSelecionada" name="opcaoSelecionada" (change)="selecaoAlterada()">
-      <option value="Todas">Todas</option>
-      <option value="Home">Home</option>
-      <option value="Away">Away</option>
-      <option value="Fan">Fan</option>
-      <option value="Goalkeeper">Goalkeeper</option>
-      <option value="Special">Special Edition</option>
+      <option value="Todas">Github</option>
+      <option value="Home">Linkedin</option>
+      <option value="Away">Estagios</option>
+      <option value="Fan">Cursos Gratuitor</option>
+      <option value="Goalkeeper">Cursos Parceiros</option>
+      <option value="Special">Cursos especiais</option>
     </select>
   </div>
     <div [routerLink]="['/details', curso.id]" class="card hover" *ngFor="let curso of cursosFiltradas">
