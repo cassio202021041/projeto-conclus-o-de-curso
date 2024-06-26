@@ -1,15 +1,15 @@
 <app-header></app-header>
 <main>
   <div class="titulo">
-    <h3>Confira a coleção Manchester City</h3>
-    <img class="escudo" src="../../../../assets/images/escudo_manchester_city.png" alt="">
+    <h3>Cursos Java para iniciante</h3>
+    <img class="escudo" src="../../../../assets/images/cursoJava.png" alt="">
   </div>
   <div class="imagens">
     <button class="hover" (click)="mostrarImagemAnterior()"><img class="left" src="../../../../assets/images/botao_proximo.png" alt=""></button>
     <img class="home_picture" [src]="imagens[imagemAtualIndex]" alt="Imagem">
     <button class="hover" (click)="mostrarProximaImagem()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
   </div>
-  <button [routerLink]="['/search', 'manchester city']" class="colecao titulo comprar hover"> <img class="escudo" src="../../../../assets/images/escudo_manchester_city.png" alt="">Coleção</button>
+  <button [routerLink]="['/search', '|Cursos Java']" class="colecao titulo comprar hover"> <img class="escudo" src="../../../../assets/images/cursoJava.png" alt="">Cursos Java</button>
   <div class="faixa_vermelha">
     <div class="margem">
       <button class="hover" [disabled]="!passadorEsquerda"  (click)="removeContadorPaises()"><img class="left" src="../../../../assets/images/botao_proximo.png" alt=""></button>

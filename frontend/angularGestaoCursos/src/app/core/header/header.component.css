@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap');
 header{
-    box-shadow: 0px 15px 10px -15px #111; 
-    font-family: 'Lexend', sans-serif;   
+    box-shadow: 0px 15px 10px -15px #111;
+    font-family: 'Lexend', sans-serif;
 }
 div{
     display: block;
@@ -13,7 +13,7 @@ header .search{
 }
 header h1{
     margin-left: 44vw;
-    color: #F4483C;
+    color: #021a1b;
     cursor: pointer;
 }
 .imagem{
@@ -35,7 +35,7 @@ header h1{
     top: 3.5vw;
     left: 2vw;
     display: flex;
-    color: #F4483C;
+    color: #030e24;
     width: fit-content;
     height: 4vw;
     margin-top: 1vw;
@@ -48,8 +48,8 @@ header h1{
 .sale{
     width: 100%;
     height: 3vw;
-    background: linear-gradient(to bottom, #F4483C, #F4483C, #F4483C, #000000);
-    box-shadow: 0px 15px 10px -15px #111; 
+    background: linear-gradient(to bottom, #3cdff4, #3c4ef4, #a13cf4, #000000);
+    box-shadow: 0px 15px 10px -15px #111;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -58,25 +58,25 @@ header h1{
 .sale h4{
     margin: auto;
     margin-top: 0.5vw;
-    
+
 }
 .background{
     position: fixed;
     top: 0; /* A partir do topo */
-    left: 0; 
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    
+
 }
 .background button{
     position: fixed;
-    top: 1vw; 
-    left: 35vw; 
+    top: 1vw;
+    left: 35vw;
     width: 10vw;
     height: 4vw;
     border-radius: 10px;
-    background-color: #F4483C;
+    background-color: #1e0fa8;
     color: #fff;
     border: none;
     font-size: 1.5vw;
@@ -87,7 +87,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
     margin-bottom: 2vw;
     border-radius: 30px;
 }
@@ -112,7 +112,7 @@ input{
     font-size: 1.5vw;
 }
 input:focus {
-    outline: none; 
+    outline: none;
 }
 img{
     width: 3vw;
@@ -136,7 +136,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
     font-family: 'Lexend', sans-serif;
     margin-bottom: 5vw;
 }
@@ -152,7 +152,7 @@ header {
         font-size: 4vw;
     }
     input:focus {
-        outline: none; 
+        outline: none;
     }
     img{
         width: 12vw;
@@ -164,7 +164,7 @@ header {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         margin-right: 2vw;
         width: 55%;
-        
+
     }
 
     .rastreio{
@@ -172,7 +172,7 @@ header {
         top: 14vw;
         left: 2vw;
         display: flex;
-        color: #F4483C;
+        color: #3c67f4;
         width: fit-content;
         height: 4vw;
         margin-top: 1vw;
@@ -188,7 +188,7 @@ header {
         width: 100%;
         height: 6vw;
         background: linear-gradient(to bottom, #F4483C, #F4483C, #F4483C, #000000);
-        box-shadow: 0px 15px 10px -15px #111; 
+        box-shadow: 0px 15px 10px -15px #111;
         border-radius: 10px;
         font-size: 4vw;
     }
@@ -196,7 +196,7 @@ header {
         margin: auto;
         margin-top: 0.5vw;
         margin-left: 25vw;
-        
+
     }
     .imagem{
         position: absolute;
@@ -204,7 +204,7 @@ header {
         right: 2vw;
         height: auto;
         background-color: #fff;
-       
+
     }
     .imagem img{
         border-radius: 10px;
@@ -215,7 +215,7 @@ header {
     }
     .logo_search{
         margin-left: -12vw;
-  
+
     }
     header h3{
         margin-left: -5vw

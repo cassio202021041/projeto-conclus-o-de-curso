@@ -18,15 +18,15 @@ export class HomeComponent implements OnInit {
   imagemAtualIndex: number = 0;
 
   paises = [
-  { nome: 'Seleções', imagem: '../../../../assets/images/neymar_home.png', nomeBusca: 'Seleção' },
-  { nome: 'Europa', imagem: '../../../../assets/images/lautaro_home.png', nomeBusca: 'Europa' },
-  { nome: 'Espanhol', imagem: '../../../../assets/images/bellingham_home.png', nomeBusca: 'Espanha' },
-  { nome: 'Inglês', imagem: '../../../../assets/images/bruno_home.png', nomeBusca: 'Inglaterra' },
-  { nome: 'Brasileirão', imagem: '../../../../assets/images/suarez_home.png', nomeBusca: 'Brasil' },
-  { nome: 'Francês', imagem: '../../../../assets/images/mbappe_home.png', nomeBusca: 'França' },
-  { nome: 'Sauditão', imagem: '../../../../assets/images/cr7_home.png', nomeBusca: 'arabia saudita' },
-  { nome: 'Italiano', imagem: '../../../../assets/images/rafael_home.png', nomeBusca: 'Italia' },
-  { nome: 'Alemão', imagem: '../../../../assets/images/kimmich_home.png', nomeBusca: 'Alemanha' }
+  { nome: 'Java', imagem: '../../../../assets/images/java2.png', nomeBusca: 'Java' },
+  { nome: 'Python', imagem: '../../../../assets/images/lautaro_home.png', nomeBusca: 'Python' },
+  { nome: 'PHP', imagem: '../../../../assets/images/bellingham_home.png', nomeBusca: 'PHP' },
+  { nome: 'C#', imagem: '../../../../assets/images/bruno_home.png', nomeBusca: 'C#' },
+  { nome: 'ARDUINO', imagem: '../../../../assets/images/suarez_home.png', nomeBusca: 'ARDUINO' },
+  { nome: 'WEB', imagem: '../../../../assets/images/mbappe_home.png', nomeBusca: 'WEB' },
+  { nome: 'JavaScript', imagem: '../../../../assets/images/cr7_home.png', nomeBusca: 'JavaScript' },
+  { nome: 'Banco de Dados', imagem: '../../../../assets/images/rafael_home.png', nomeBusca: 'Banco de Dados' },
+  { nome: 'Power BI', imagem: '../../../../assets/images/kimmich_home.png', nomeBusca: 'Power BI' }
   ];
 
   indicePaises = 0;
