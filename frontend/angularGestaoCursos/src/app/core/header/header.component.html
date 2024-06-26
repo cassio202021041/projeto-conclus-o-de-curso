@@ -1,18 +1,17 @@
-<p>header works!</p>
 <header>
-  <div class="sale"><h4>20% off em todo o site!</h4></div>
-  <div class="rastreio" [routerLink]="['/tracking']">
-      <img src="../../../assets/images/truck.png" alt="rastreio">
-      <h3>Rastreio</h3>
-  </div>
-  <div class="logo_search">
-  <h1 [routerLink]="['']">Cursos</h1>
-  <div class="search">
-      <input type="text" placeholder="Digite o nome do curso..." [(ngModel)]="search" (keyup.enter)="navigateToSearch()">
-      <img [routerLink]="['/search/nome', search]" src="../../../assets/images/botao_pesquisa.png" alt="">
-  </div>
-  </div>
-  <div class="imagem">
-      <img  [routerLink]="['/management']" src="../../../assets/images/botao_configuracoes.png" alt="">
-  </div>
+    <div class="sale"><h4>20% off em todo o site!</h4></div>
+    <div class="rastreio" [routerLink]="['/tracking']">
+        <img src="../../../assets/images/truck.png" alt="rastreio">
+        <h3>Rastreio</h3>
+    </div>
+    <div class="logo_search">
+    <h1 [routerLink]="['']">Cursos</h1>
+    <div class="search">
+        <input type="text" placeholder="Digite o nome do curso..." [(ngModel)]="search" (keyup.enter)="navigateToSearch()">
+        <img [routerLink]="['/search/nome', search]" src="../../../assets/images/botao_pesquisa.png" alt="">
+    </div>
+    </div>
+    <div class="imagem">
+        <img  [routerLink]="['/management']" src="../../../assets/images/botao_configuracoes.png" alt="">
+    </div>
 </header>

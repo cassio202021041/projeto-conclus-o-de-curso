@@ -1,17 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { LoadingComponent } from './loading/loading.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CoreRoutingModule } from './core-routing.module';
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { CoreRoutingModule } from "./core-routing.module";
+import { FooterComponent } from "./footer/footer.component";
+import { LoadingComponent } from "./loading/loading.component";
+import { HeaderComponent } from "./header/header.component";
+
+
 
 
 
 @NgModule({
   declarations: [
-    FooterComponent,
     HeaderComponent,
+    FooterComponent,
     LoadingComponent
   ],
   imports: [
@@ -19,6 +21,7 @@ import { CoreRoutingModule } from './core-routing.module';
     CoreRoutingModule,
     FormsModule,
     ReactiveFormsModule
+
   ],
   exports: [
     HeaderComponent,

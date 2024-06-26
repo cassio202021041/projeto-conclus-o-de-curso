@@ -1,87 +1,48 @@
-import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http'
-import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-import { Cliente } from '../cliente';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
+import { Venda } from "../../venda/venda";
+import { VendaService } from "../../venda/venda.service";
+import { Cliente } from "../cliente";
+import { ClienteService } from "../cliente.service";
 
 
-@Injectable({
-  providedIn: 'root'
+
+@Component({
+  selector: 'app-details-cliente',
+  templateUrl: './details-cliente.component.html',
+  styleUrls: ['../../curso/home/home.component.css','./details-cliente.component.css']
 })
-export class ClienteService {
+export class DetailsClienteComponent implements OnInit{
+  id!: number;
+  cliente: Cliente = {} as Cliente;
+  vendas!: Venda[];
+  carregar:boolean = true;
 
-  private apiURL = "http://localhost:8080/";
+  constructor(private route: ActivatedRoute, private router: Router, public clienteService: ClienteService, public vendaService: VendaService) {
 
-  httpOptions = {
-    headers: new HttpHeaders({
-    'Content-Type': 'application/json'
-    })
+  }
+
+  ngOnInit(): void {
+
+    this.id = this.route.snapshot.params['id'];
+
+    if (this.id !== null) {
+      console.log(this.id);
+
+       this.clienteService.find(this.id).subscribe((data: Cliente)=>{
+        this.cliente = data;
+        console.log(this.cliente);
+        })
+        this.vendaService.getClienteVendas(this.id).subscribe((data: Venda[])=>{
+          this.vendas = data;
+          console.log(this.vendas);
+          })
+      this.carregar = false;
+    }
+    else{
+      this.router.navigateByUrl('');
     }
 
-    constructor(private httpClient: HttpClient) { }
 
-    getClientes(): Observable<Cliente[]> {
-
-      const url = this.apiURL + 'clientes';
-
-      return this.httpClient.get<Cliente[]>(url, this.httpOptions)
-        .pipe(
-          catchError(this.errorHandler)
-        );
-    }
-
-    find(id:number): Observable<any> {
-      return this.httpClient.get(this.apiURL + 'clientes/' + id)
-      .pipe(
-        catchError(this.errorHandler)
-      )
-    }
-
-    findByCPF(cpf:string): Observable<any> {
-      return this.httpClient.get(this.apiURL + 'clientes/find?cpf=' + cpf)
-      .pipe(
-        catchError(this.errorHandler)
-      )
-    }
-
-    create(cliente:Cliente):  Observable<any> {
-
-      return this.httpClient.post(this.apiURL + 'clientes', JSON.stringify(cliente), this.httpOptions)
-
-      .pipe(
-        catchError((error: any) => {
-          const mensagemDeErro = error.error.message;
-          alert("Erro: " + mensagemDeErro);
-
-        return ('Ocorreu um erro. Por favor, tente novamente mais tarde.');
-      })
-      )
-    }
-
-    update(cliente:Cliente): Observable<any> {
-
-      return this.httpClient.put(this.apiURL + 'clientes', JSON.stringify(cliente), this.httpOptions)
-
-      .pipe(
-        catchError(this.errorHandler)
-      )
-    }
-
-    delete(id:number){
-      return this.httpClient.delete(this.apiURL + 'clientes/' + id, this.httpOptions)
-      .pipe(
-        catchError(this.errorHandler)
-      )
-    }
-
-    errorHandler(error:any) {
-      let errorMessage = '';
-      if(error.error instanceof ErrorEvent) {
-        errorMessage = error.error.message;
-      } else {
-        errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
-      }
-      return throwError(errorMessage);
-   }
-
+  }
 }
