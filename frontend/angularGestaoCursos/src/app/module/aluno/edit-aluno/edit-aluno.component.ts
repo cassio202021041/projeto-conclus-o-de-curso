@@ -1,23 +1,26 @@
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { ActivatedRoute, Router } from "@angular/router";
-import { Cliente } from "../cliente";
-import { ClienteService } from "../cliente.service";
+import { Aluno } from "../aluno";
+import { AlunoService } from "../aluno.service";
+
+
+
 
 
 @Component({
-  selector: 'app-edit-cliente',
-  templateUrl: './edit-cliente.component.html',
-  styleUrls: ['../../curso/edit/edit.component.css','./edit-cliente.component.css']
+  selector: 'app-edit-aluno',
+  templateUrl: './edit-aluno.component.html',
+  styleUrls: ['../../curso/edit/edit.component.css','./edit-aluno.component.css']
 })
-export class EditClienteComponent implements OnInit{
+export class EditAlunoComponent implements OnInit{
   id!: number;
-  cliente: Cliente = {} as Cliente;
+  aluno: Aluno = {} as Aluno;
   form!: FormGroup;
   carregar:boolean = true;
 
   constructor(
-    public clienteService: ClienteService,
+    public alunoService: AlunoService,
     private route: ActivatedRoute,
     private router: Router
   ) {
@@ -28,9 +31,9 @@ export class EditClienteComponent implements OnInit{
     if (this.id !== null) {
 
       this.id = this.route.snapshot.params['id'];
-      this.cliente.id = this.id;
-      this.clienteService.find(this.id).subscribe((data: Cliente)=>{
-      this.cliente = data;
+      this.aluno.id = this.id;
+      this.alunoService.find(this.id).subscribe((data: Aluno)=>{
+      this.aluno = data;
       this.carregar = false;
 
       });
@@ -54,12 +57,12 @@ export class EditClienteComponent implements OnInit{
   submit(){
     this.carregar = true;
     console.log(this.form.value);
-    this.cliente.nome = this.form.value.nome;
-    this.cliente.cpf = this.form.value.cpf;
-      this.clienteService.update(this.cliente).subscribe(res => {
+    this.aluno.nome = this.form.value.nome;
+    this.aluno.cpf = this.form.value.cpf;
+      this.alunoService.update(this.aluno).subscribe(res => {
         this.carregar = false;
-        console.log('Cliente atualizado com sucesso!');
-        this.router.navigateByUrl('clientes/details/'+this.cliente.id);
+        console.log('Aluno atualizado com sucesso!');
+        this.router.navigateByUrl('alunos/details/'+this.aluno.id);
 
     })
   }

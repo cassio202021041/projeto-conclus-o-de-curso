@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
-import { Cliente } from "../../cliente/cliente";
-import { ClienteService } from "../../cliente/cliente.service";
 import { CursoVenda } from "../../venda/cursovenda";
 import { Venda } from "../../venda/venda";
 import { VendaService } from "../../venda/venda.service";
 import { CursoService } from "../curso.service";
+import { Aluno } from "../../aluno/aluno";
+import { AlunoService } from "../../aluno/aluno.service";
 
 
 @Component({
@@ -17,7 +17,7 @@ export class BuyComponent implements OnInit{
   cpf!:string;
   cpf2!:string;
   carregar: boolean = false;
-  cliente!: Cliente;
+  aluno!: Aluno;
   nome!: string;
   inputNome:boolean = false;
   cursos: CursoVenda[] = [];
@@ -47,7 +47,7 @@ export class BuyComponent implements OnInit{
 
   constructor(
     public cursoService: CursoService,
-    public clienteService: ClienteService,
+    public alunoService: AlunoService,
     public vendaService: VendaService,
     private router: Router
     ) {
@@ -67,7 +67,7 @@ export class BuyComponent implements OnInit{
     if (this.cpf.length === 11) {
       if(this.cpf==this.cpf2){
         this.naoCoincide = false;
-        this.buscaCliente();
+        this.buscaAluno();
       }
       else if (this.cpf2 && this.cpf2.length === 11){
         this.naoCoincide = true;
@@ -76,16 +76,16 @@ export class BuyComponent implements OnInit{
     }
   }
 
-  buscaCliente(){
+  buscaAluno(){
     this.carregar=true;
-    this.clienteService.findByCPF(this.cpf).subscribe((data: Cliente)=>{
-      this.cliente = data;
+    this.alunoService.findByCPF(this.cpf).subscribe((data: Aluno)=>{
+      this.aluno = data;
       this.carregar=false;
-      console.log(this.cliente);
-      if(this.cliente){
+      console.log(this.aluno);
+      if(this.aluno){
         this.inputNome = false;
         this.cadastrar = false;
-        this.nome = this.cliente.nome;
+        this.nome = this.aluno.nome;
       }
       else{
         this.inputNome = true;
@@ -95,13 +95,13 @@ export class BuyComponent implements OnInit{
       })
   }
 
-  cadastrarCliente(){
+  cadastrarAluno(){
     this.carregar=true;
-    this.cliente = {} as Cliente;
-    this.cliente.nome = this.nome;
-    this.cliente.cpf = this.cpf;
-    this.clienteService.create(this.cliente).subscribe((data: Cliente)=>{
-      this.cliente = data;
+    this.aluno = {} as Aluno;
+    this.aluno.nome = this.nome;
+    this.aluno.cpf = this.cpf;
+    this.alunoService.create(this.aluno).subscribe((data: Aluno)=>{
+      this.aluno = data;
       this.cadastrar = false;
       this.carregar=false;
       })
@@ -119,7 +119,7 @@ export class BuyComponent implements OnInit{
     this.carregar=true;
     this.venda = {} as Venda
     this.venda.cursoVendas = this.cursos;
-    this.venda.cliente = this.cliente;
+    this.venda.aluno = this.aluno;
 
 
     console.log(this.venda);

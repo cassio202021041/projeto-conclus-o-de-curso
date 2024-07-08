@@ -35,9 +35,9 @@ export class VendaService {
       )
     }
 
-    getClienteVendas(id:number): Observable<Venda[]> {
+    getAlunoVendas(id:number): Observable<Venda[]> {
 
-      const url = this.apiURL + 'vendas/cliente/'+ id;
+      const url = this.apiURL + 'vendas/aluno/'+ id;
 
       return this.httpClient.get<Venda[]>(url, this.httpOptions)
         .pipe(
@@ -78,7 +78,7 @@ export class VendaService {
     }
 
     create(id:number){
-      return this.httpClient.post(this.apiURL + 'vendas/cliente/' + id, this.httpOptions)
+      return this.httpClient.post(this.apiURL + 'vendas/aluno/' + id, this.httpOptions)
       .pipe(
         catchError(this.errorHandler)
       )

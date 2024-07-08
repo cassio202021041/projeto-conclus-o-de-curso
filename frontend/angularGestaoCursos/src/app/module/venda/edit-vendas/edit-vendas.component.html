@@ -6,23 +6,23 @@
             <div class="principal">
                 <h1>Atualizar Venda</h1>
                 <form [formGroup]="form">
-                        <h1>Nome: {{ this.venda.cliente.nome }}</h1>
-                        <h1>CPF: {{ this.venda.cliente.cpf }}</h1>
+                        <h1>Nome: {{ this.venda.aluno.nome }}</h1>
+                        <h1>CPF: {{ this.venda.aluno.cpf }}</h1>
                         <h1>Valor da compra: {{ this.venda.valor }}</h1>
                     <div class="atributos">
-                        <label for="cliente_id">ID do cliente:</label>
+                        <label for="aluno_id">ID do aluno:</label>
                         <input
-                            formControlName="cliente_id"
-                            id="cliente_id"
-                            [(ngModel)]="this.venda.cliente.id"
+                            formControlName="aluno_id"
+                            id="aluno_id"
+                            [(ngModel)]="this.venda.aluno.id"
                             type="number">
-                        <div *ngIf="f['cliente_id'].touched && f['cliente_id'].invalid" class="alert">
-                            <div *ngIf="f['cliente_id'].errors?.['required']">(Preencha o campo acima)</div>
+                        <div *ngIf="f['aluno_id'].touched && f['aluno_id'].invalid" class="alert">
+                            <div *ngIf="f['aluno_id'].errors?.['required']">(Preencha o campo acima)</div>
                         </div>
                     </div>
 
                     <div class="atributos">
-                        <label for="cliente_id">Data da compra:</label>
+                        <label for="aluno_id">Data da compra:</label>
                         <input
                             formControlName="data_compra"
                             id="data_compra"

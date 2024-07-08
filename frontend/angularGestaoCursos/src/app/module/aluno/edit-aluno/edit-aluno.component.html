@@ -4,7 +4,7 @@
     <main>
         
             <div class="principal">
-                <h1>Atualizar cliente</h1>
+                <h1>Atualizar aluno</h1>
                 <form [formGroup]="form" (ngSubmit)="submit()">
                     <div class="atributos">
                         <label for="nome">Nome:</label>
@@ -12,7 +12,7 @@
                             formControlName="nome"
                             id="nome" 
                             type="text" 
-                            [(ngModel)]="cliente.nome">
+                            [(ngModel)]="aluno.nome">
                         <div *ngIf="f['nome'].touched && f['nome'].invalid" class="alert">
                             <div *ngIf="f['nome'].errors?.['required']">(Preencha o campo acima)</div>
                         </div>
@@ -22,7 +22,7 @@
                         <input 
                             formControlName="cpf"
                             id="cpf" 
-                            [(ngModel)]="cliente.cpf"
+                            [(ngModel)]="aluno.cpf"
                             type="text">
                         <div *ngIf="f['cpf'].touched && f['cpf'].invalid" class="alert">
                             <div *ngIf="f['cpf'].errors?.['required']">(Preencha o campo acima)</div>

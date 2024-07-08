@@ -1,9 +1,9 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { CreateClienteComponent } from "./module/cliente/create-cliente/create-cliente.component";
-import { DetailsClienteComponent } from "./module/cliente/details-cliente/details-cliente.component";
-import { EditClienteComponent } from "./module/cliente/edit-cliente/edit-cliente.component";
-import { ManagementClienteComponent } from "./module/cliente/management-cliente/management-cliente.component";
+import { CreateAlunoComponent } from "./module/aluno/create-aluno/create-aluno.component";
+import { DetailsAlunoComponent } from "./module/aluno/details-aluno/details-aluno.component";
+import { EditAlunoComponent } from "./module/aluno/edit-aluno/edit-aluno.component";
+import { ManagementAlunoComponent } from "./module/aluno/management-aluno/management-aluno.component";
 import { BuyComponent } from "./module/curso/buy/buy.component";
 import { CreateComponent } from "./module/curso/create/create.component";
 import { DetailsComponent } from "./module/curso/details/details.component";
@@ -28,10 +28,10 @@ const routes: Routes = [
   { path: 'edit/:id', component: EditComponent},
   { path: 'search/:nome', component: SearchComponent},
   { path: 'search2/:pais', component: SearchComponent},
-  { path: 'clientes', component: ManagementClienteComponent},
-  { path: 'clientes/create', component: CreateClienteComponent},
-  { path: 'clientes/edit/:id', component: EditClienteComponent},
-  { path: 'clientes/details/:id', component: DetailsClienteComponent},
+  { path: 'alunos', component: ManagementAlunoComponent},
+  { path: 'alunos/create', component: CreateAlunoComponent},
+  { path: 'alunos/edit/:id', component: EditAlunoComponent},
+  { path: 'alunos/details/:id', component: DetailsAlunoComponent},
   { path: 'vendas', component: ManagementVendasComponent},
   { path: 'vendas/create', component: CreateVendaComponent},
   { path: 'vendas/details/:id', component: DetailsVendaComponent},

@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http'
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { Cliente } from './cliente';
+import { Aluno } from './aluno';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class ClienteService {
+export class AlunoService {
 
   private apiURL = "http://localhost:8080/";
 
@@ -20,33 +20,33 @@ export class ClienteService {
 
     constructor(private httpClient: HttpClient) { }
 
-    getClientes(): Observable<Cliente[]> {
+    getAlunos(): Observable<Aluno[]> {
 
-      const url = this.apiURL + 'clientes';
+      const url = this.apiURL + 'alunos';
 
-      return this.httpClient.get<Cliente[]>(url, this.httpOptions)
+      return this.httpClient.get<Aluno[]>(url, this.httpOptions)
         .pipe(
           catchError(this.errorHandler)
         );
     }
 
     find(id:number): Observable<any> {
-      return this.httpClient.get(this.apiURL + 'clientes/' + id)
+      return this.httpClient.get(this.apiURL + 'alunos/' + id)
       .pipe(
         catchError(this.errorHandler)
       )
     }
 
     findByCPF(cpf:string): Observable<any> {
-      return this.httpClient.get(this.apiURL + 'clientes/find?cpf=' + cpf)
+      return this.httpClient.get(this.apiURL + 'alunos/find?cpf=' + cpf)
       .pipe(
         catchError(this.errorHandler)
       )
     }
 
-    create(cliente:Cliente):  Observable<any> {
+    create(aluno:Aluno):  Observable<any> {
 
-      return this.httpClient.post(this.apiURL + 'clientes', JSON.stringify(cliente), this.httpOptions)
+      return this.httpClient.post(this.apiURL + 'alunos', JSON.stringify(aluno), this.httpOptions)
 
       .pipe(
         catchError((error: any) => {
@@ -58,9 +58,9 @@ export class ClienteService {
       )
     }
 
-    update(cliente:Cliente): Observable<any> {
+    update(aluno:Aluno): Observable<any> {
 
-      return this.httpClient.put(this.apiURL + 'clientes', JSON.stringify(cliente), this.httpOptions)
+      return this.httpClient.put(this.apiURL + 'alunos', JSON.stringify(aluno), this.httpOptions)
 
       .pipe(
         catchError(this.errorHandler)
@@ -68,7 +68,7 @@ export class ClienteService {
     }
 
     delete(id:number){
-      return this.httpClient.delete(this.apiURL + 'clientes/' + id, this.httpOptions)
+      return this.httpClient.delete(this.apiURL + 'alunos/' + id, this.httpOptions)
       .pipe(
         catchError(this.errorHandler)
       )

@@ -10,7 +10,7 @@ import { VendaService } from "../venda.service";
 @Component({
   selector: 'app-edit-vendas',
   templateUrl: './edit-vendas.component.html',
-  styleUrls: ['../../curso/edit/edit.component.css','../../curso/home/home.component.css','../../cliente/details-cliente/details-cliente.component.css', './edit-vendas.component.css']
+  styleUrls: ['../../curso/edit/edit.component.css','../../curso/home/home.component.css','../../aluno/details-aluno/details-aluno.component.css', './edit-vendas.component.css']
 })
 export class EditVendasComponent implements OnInit{
 
@@ -47,7 +47,7 @@ export class EditVendasComponent implements OnInit{
     }
     this.form = new FormGroup({
 
-      cliente_id: new FormControl('', [Validators.required]),
+      aluno_id: new FormControl('', [Validators.required]),
       data_compra: new FormControl('', [Validators.required]),
 
 

@@ -2,10 +2,9 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { CoreModule } from "./core/core.module";
-import { ClienteModule } from "./module/cliente/cliente.module";
-import { CursoModule } from "./module/curso/curso.module";
+import { CoreModule } from "./core/core.module";import { CursoModule } from "./module/curso/curso.module";
 import { VendaModule } from "./module/venda/venda.module";
+import { AlunoModule } from "./module/aluno/aluno.module";
 
 
 
@@ -19,7 +18,7 @@ import { VendaModule } from "./module/venda/venda.module";
     BrowserModule,
     AppRoutingModule,
     CursoModule,
-    ClienteModule,
+    AlunoModule,
     CoreModule,
     VendaModule
   ],

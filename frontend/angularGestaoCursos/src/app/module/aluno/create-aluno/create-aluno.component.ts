@@ -1,21 +1,24 @@
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
-import { Cliente } from "../cliente";
-import { ClienteService } from "../cliente.service";
+import { Aluno } from "../aluno";
+import { AlunoService } from "../aluno.service";
+
+
+
 
 @Component({
-  selector: 'app-create-cliente',
-  templateUrl: './create-cliente.component.html',
-  styleUrls: ['../../curso/edit/edit.component.css','./create-cliente.component.css']
+  selector: 'app-create-aluno',
+  templateUrl: './create-aluno.component.html',
+  styleUrls: ['../../curso/edit/edit.component.css','./create-aluno.component.css']
 })
-export class CreateClienteComponent  implements OnInit{
+export class CreateAlunoComponent  implements OnInit{
   form!: FormGroup;
-  cliente!: Cliente;
+  aluno!: Aluno;
   carregar:boolean = true;
 
   constructor(
-    public clienteService: ClienteService,
+    public alunoService: AlunoService,
     private router: Router
     ) { }
 
@@ -35,10 +38,10 @@ export class CreateClienteComponent  implements OnInit{
         this.carregar = true;
 
         console.log(this.form.value);
-        this.clienteService.create(this.form.value).subscribe(res => {
+        this.alunoService.create(this.form.value).subscribe(res => {
           this.carregar = false;
 
-             alert('Cliente criado com sucesso!');
+             alert('Aluno criado com sucesso!');
              this.router.navigateByUrl('create');
         })
       }
