@@ -23,8 +23,8 @@ export class DetailsComponent implements OnInit {
       id: 0,
       curso: {
         id:0,
-        clube: "",
-        pais: "",
+        linguagem: "",
+        idioma: "",
         imagem: "",
         ano:0,
         quantidade:0,

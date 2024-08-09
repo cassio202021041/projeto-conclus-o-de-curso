@@ -36,7 +36,7 @@ export class ManagementComponent implements OnInit {
           next: () => {
             const index = this.cursos.findIndex(curso => curso.id === id);
             if (index !== -1) {
-              this.cursos.splice(index, 1); // Remove a curso do array pelo índice
+              this.cursos.splice(index, 1); // Remove o curso do array pelo índice
             }
             this.carregar = false;
           },
@@ -52,7 +52,7 @@ export class ManagementComponent implements OnInit {
       let word = this.valorBusca;
       this.cursosFiltradas =[];
           this.cursos.forEach(curso => {
-            if (curso.clube.toLowerCase().includes(word)) {
+            if (curso.linguagem.toLowerCase().includes(word)) {
               this.cursosFiltradas.push(curso);
               this.carregar=false;
             }

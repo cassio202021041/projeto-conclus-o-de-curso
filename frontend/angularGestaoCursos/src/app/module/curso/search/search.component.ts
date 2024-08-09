@@ -39,12 +39,12 @@ export class SearchComponent implements OnInit {
         this.router.navigateByUrl('');
       }
     }
-    else if (params.has('pais')) {
-      this.nome = params.get('pais') || '';
+    else if (params.has('idioma')) {
+      this.nome = params.get('idioma') || '';
       if (this.nome !== '') {
         console.log(this.nome);
 
-        this.cursoService.findByPais(this.nome).subscribe({
+        this.cursoService.findByIdioma(this.nome).subscribe({
           next: (data:Curso[]) => {
           this.cursos = data;
           console.log(this.cursos);

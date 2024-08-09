@@ -14,8 +14,8 @@
                 </div>
                 <div class="flex">
                     <div class="card" *ngFor="let curso of venda.cursoVendas">
-                        <img [src]="curso.curso.imagem" alt="{{ curso.curso.clube }}">
-                            <h3>{{ curso.curso.clube }}</h3>
+                        <img [src]="curso.curso.imagem" alt="{{ curso.curso.linguagem }}">
+                            <h3>{{ curso.curso.linguagem }}</h3>
                             <h5>R$ {{ curso.valor }}</h5>
                             <h3>Quantidade: {{ curso.quantidade }}</h3>
                     </div>

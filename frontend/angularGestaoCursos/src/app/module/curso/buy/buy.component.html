@@ -25,9 +25,9 @@
     <h3>Cursos:</h3>
     <div class="flex">
         <div class="card" *ngFor="let curso of cursos">
-            <img [src]="curso.curso.imagem" alt="{{ curso.curso.clube }}">
+            <img [src]="curso.curso.imagem" alt="{{ curso.curso.linguagem }}">
             <div class="infos">
-                <h3>{{ curso.curso.clube }}</h3>
+                <h3>{{ curso.curso.linguagem }}</h3>
                 <h4>{{ curso.curso.ano }}</h4>
                 <h5>R$ {{ curso.curso.valor }}</h5>
                 <h3>Quantidade: {{ curso.quantidade }}</h3>

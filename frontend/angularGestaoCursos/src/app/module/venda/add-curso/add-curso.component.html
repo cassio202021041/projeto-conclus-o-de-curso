@@ -3,9 +3,9 @@
 <main>
     <div class="card" *ngFor="let curso of cursos">
       <a [routerLink]="['/details', curso.id]">
-        <img [src]="curso.imagem" alt="{{ curso.clube }}">
+        <img [src]="curso.imagem" alt="{{ curso.linguagem }}">
       </a>
-      <h3>{{ curso.clube }}</h3>
+      <h3>{{ curso.linguagem }}</h3>
       <h4>{{ curso.ano }}</h4>
       <h5>R$ {{ curso.valor }}</h5>
       <button (click)="addCursoToVenda(curso)">Adicionar Curso</button>
@@ -17,8 +17,8 @@
   <div class="mostrar" *ngIf="adicionar">
     <div class="adicionar">
       <button class="close" (click)="fechar()">Fechar</button>
-          <img [src]="curso.curso.imagem" alt="{{ curso.curso.clube }}">
-        <h3>{{ curso.curso.clube }}</h3>
+          <img [src]="curso.curso.imagem" alt="{{ curso.curso.linguagem }}">
+        <h3>{{ curso.curso.linguagem }}</h3>
         <h4>{{ curso.curso.ano }}</h4>
         <h5>R$ {{ curso.curso.valor }}</h5>
 

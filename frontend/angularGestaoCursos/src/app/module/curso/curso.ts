@@ -1,7 +1,7 @@
 export interface Curso {
     id : number;
-    clube: string;
-    pais: string;
+    linguagem: string;
+    idioma: string;
     ano: number;
     quantidade: number;
     valor: number;

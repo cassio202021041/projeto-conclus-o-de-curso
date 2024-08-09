@@ -17,26 +17,26 @@ export class HomeComponent implements OnInit {
   imagens:string[] = [];
   imagemAtualIndex: number = 0;
 
-  paises = [
+  idiomas = [
   { nome: 'Java', imagem: '../../../../assets/images/java2.png', nomeBusca: 'Java' },
-  { nome: 'Python', imagem: '../../../../assets/images/lautaro_home.png', nomeBusca: 'Python' },
-  { nome: 'PHP', imagem: '../../../../assets/images/bellingham_home.png', nomeBusca: 'PHP' },
-  { nome: 'C#', imagem: '../../../../assets/images/bruno_home.png', nomeBusca: 'C#' },
-  { nome: 'ARDUINO', imagem: '../../../../assets/images/suarez_home.png', nomeBusca: 'ARDUINO' },
-  { nome: 'WEB', imagem: '../../../../assets/images/mbappe_home.png', nomeBusca: 'WEB' },
-  { nome: 'JavaScript', imagem: '../../../../assets/images/cr7_home.png', nomeBusca: 'JavaScript' },
-  { nome: 'Banco de Dados', imagem: '../../../../assets/images/rafael_home.png', nomeBusca: 'Banco de Dados' },
-  { nome: 'Power BI', imagem: '../../../../assets/images/kimmich_home.png', nomeBusca: 'Power BI' }
+  { nome: 'Python', imagem: '../../../../assets/images/python.png', nomeBusca: 'Python' },
+  { nome: 'PHP', imagem: '../../../../assets/images/php.png', nomeBusca: 'PHP' },
+  { nome: 'C#', imagem: '../../../../assets/images/csharp.png', nomeBusca: 'C#' },
+  { nome: 'ARDUINO', imagem: '../../../../assets/images/arduino.png', nomeBusca: 'ARDUINO' },
+  { nome: 'DESIGNER', imagem: '../../../../assets/images/webdesigner.png', nomeBusca: 'DESIGNER' },
+  { nome: 'JavaScript', imagem: '../../../../assets/images/js.png', nomeBusca: 'JavaScript' },
+  { nome: 'Banco', imagem: '../../../../assets/images/bd.png', nomeBusca: 'Banco de Dados' },
+  { nome: 'Power BI', imagem: '../../../../assets/images/powerb.png', nomeBusca: 'Power BI' }
   ];
 
-  indicePaises = 0;
-  contadorPaises = 0
+  indiceIdiomas = 0;
+  contadorIdiomas = 0
   passadorEsquerda = false;
   passadorDireita = true;
 
-  addContadorPaises() {
-    this.indicePaises += 1;
-    if(this.indicePaises==this.paises.length-5){
+  addContadorIdiomas() {
+    this.indiceIdiomas += 1;
+    if(this.indiceIdiomas==this.idiomas.length-5){
       this.passadorDireita = false;
     }
     else{
@@ -45,9 +45,9 @@ export class HomeComponent implements OnInit {
     this.passadorEsquerda = true;
 
   }
-  removeContadorPaises() {
-    this.indicePaises -= 1;
-    if(this.indicePaises==0){
+  removeContadorIdiomas() {
+    this.indiceIdiomas -= 1;
+    if(this.indiceIdiomas==0){
       this.passadorEsquerda = false;
     }
     else{
@@ -104,7 +104,7 @@ export class HomeComponent implements OnInit {
         case 'Home':
           this.cursosFiltradas =[];
           this.cursos.forEach(curso => {
-            if (curso.clube.toLowerCase().includes('home')) {
+            if (curso.linguagem.toLowerCase().includes('home')) {
               this.cursosFiltradas.push(curso);
             }
           });
@@ -114,7 +114,7 @@ export class HomeComponent implements OnInit {
         case 'Away':
           this.cursosFiltradas =[];
           this.cursos.forEach(curso => {
-            if (curso.clube.toLowerCase().includes('away')) {
+            if (curso.linguagem.toLowerCase().includes('away')) {
               this.cursosFiltradas.push(curso);
             }
           });
@@ -124,7 +124,7 @@ export class HomeComponent implements OnInit {
         case 'Fan':
           this.cursosFiltradas =[];
           this.cursos.forEach(curso => {
-            if (curso.clube.toLowerCase().includes('fan')) {
+            if (curso.linguagem.toLowerCase().includes('fan')) {
               this.cursosFiltradas.push(curso);
             }
           });
@@ -134,7 +134,7 @@ export class HomeComponent implements OnInit {
           case 'Goalkeeper':
           this.cursosFiltradas =[];
           this.cursos.forEach(curso => {
-            if (curso.clube.toLowerCase().includes('goalkeeper')) {
+            if (curso.linguagem.toLowerCase().includes('goalkeeper')) {
               this.cursosFiltradas.push(curso);
             }
           });
@@ -144,7 +144,7 @@ export class HomeComponent implements OnInit {
         case 'Special':
           this.cursosFiltradas =[];
           this.cursos.forEach(curso => {
-            if (curso.clube.toLowerCase().includes('special')) {
+            if (curso.linguagem.toLowerCase().includes('special')) {
               this.cursosFiltradas.push(curso);
             }
           });

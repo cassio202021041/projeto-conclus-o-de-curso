@@ -51,8 +51,8 @@ export class CursoService {
         );
     }
 
-    findByPais(nome:string): Observable<Curso[]> {
-      const url = this.apiURL + 'cursos/find2?pais='+ nome;
+    findByIdioma(nome:string): Observable<Curso[]> {
+      const url = this.apiURL + 'cursos/find2?idioma='+ nome;
 
 
       return this.httpClient.get<Curso[]>(url, this.httpOptions)

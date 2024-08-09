@@ -20,9 +20,9 @@
     </div>
     <img [routerLink]="['/create']" class="create" src="../../../../assets/images/botao_add.png" alt="" >
     <div class="card" *ngFor="let curso of cursosFiltradas">
-        <img [src]="curso.imagem" alt="{{ curso.clube }}">
+        <img [src]="curso.imagem" alt="{{ curso.linguagem }}">
         <div class="infos">
-            <h3>{{ curso.clube }}</h3>
+            <h3>{{ curso.linguagem }}</h3>
             <h4>{{ curso.ano }}</h4>
             <h4>R$ {{ curso.valor }}</h4>
             <h4>Quantidade: {{ curso.quantidade }}</h4>

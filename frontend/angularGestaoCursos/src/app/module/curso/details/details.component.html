@@ -3,9 +3,9 @@
 <button class="voltar" [routerLink]="['']"><img src="../../../../assets/images/voltar.png" alt=""></button>
 <main *ngIf="curso">
     <div class="card">
-      <img [src]="curso.imagem" alt="{{ curso.clube }}">
+      <img [src]="curso.imagem" alt="{{ curso.linguagem }}">
       <div>
-        <h3>{{ curso.clube }}</h3>
+        <h3>{{ curso.linguagem }}</h3>
         <h4>{{ curso.ano }}</h4>
         <h5>R$ {{ curso.valor }}</h5>
         <label for="quantidade">Quantidade desejada:</label>

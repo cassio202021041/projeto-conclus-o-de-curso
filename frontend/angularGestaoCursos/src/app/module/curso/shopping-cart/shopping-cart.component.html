@@ -5,10 +5,10 @@
 <h1 class="titulo">Seu carrinho:</h1>
 <div class="card" *ngFor="let curso of cursos">
     <a [routerLink]="['/details', curso.curso.id]">
-      <img [src]="curso.curso.imagem" alt="{{ curso.curso.clube }}">
+      <img [src]="curso.curso.imagem" alt="{{ curso.curso.linguagem }}">
     </a>
     <div class="infos">
-      <h3>{{ curso.curso.clube }}</h3>
+      <h3>{{ curso.curso.linguagem }}</h3>
       <h4>{{ curso.curso.ano }}</h4>
       <h5>R$ {{ curso.curso.valor }}</h5>
       <h3>Quantidade: {{ curso.quantidade }}</h3>
@@ -24,8 +24,8 @@
 <div class="mostrar" *ngIf="atualizar">
     <div class="adicionar">
       <button class="close" (click)="fechar()">Fechar</button>
-          <img [src]="this.cursoVenda.curso.imagem" alt="{{ this.cursoVenda.curso.clube }}">
-        <h3>{{ this.cursoVenda.curso.clube }}</h3>
+          <img [src]="this.cursoVenda.curso.imagem" alt="{{ this.cursoVenda.curso.linguagem }}">
+        <h3>{{ this.cursoVenda.curso.linguagem }}</h3>
         <h4>{{ this.cursoVenda.curso.ano }}</h4>
         <h5>R$ {{ this.cursoVenda.curso.valor }}</h5>
 

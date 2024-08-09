@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'create', component: CreateComponent},
   { path: 'edit/:id', component: EditComponent},
   { path: 'search/:nome', component: SearchComponent},
-  { path: 'search2/:pais', component: SearchComponent},
+  { path: 'search2/:idioma', component: SearchComponent},
   { path: 'alunos', component: ManagementAlunoComponent},
   { path: 'alunos/create', component: CreateAlunoComponent},
   { path: 'alunos/edit/:id', component: EditAlunoComponent},

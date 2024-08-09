@@ -6,25 +6,25 @@
         <h1>Nova curso</h1>
         <form [formGroup]="form" (ngSubmit)="submit()">
             <div class="atributos">
-                <label for="clube">Clube - Home/Away:</label>
+                <label for="linguagem">Linguagem:</label>
                 <input
-                    formControlName="clube"
-                    id="clube"
+                    formControlName="linguagem"
+                    id="linguagem"
                     type="text"
-                    placeholder="ex: Barcelona - Home">
-                <div *ngIf="f['clube'].touched && f['clube'].invalid" class="alert">
-                    <div *ngIf="f['clube'].errors?.['required']">(Preencha o campo acima)</div>
+                    placeholder="ex: Java">
+                <div *ngIf="f['linguagem'].touched && f['linguagem'].invalid" class="alert">
+                    <div *ngIf="f['linguagem'].errors?.['required']">(Preencha o campo acima)</div>
                 </div>
             </div>
             <div class="atributos">
-                <label for="clube">País - Continente:</label>
+                <label for="linguagem">Idioma</label>
                 <input
-                    formControlName="pais"
-                    id="pais"
+                    formControlName="idioma"
+                    id="idioma"
                     type="text"
-                    placeholder="ex: Brasil - America">
-                <div *ngIf="f['pais'].touched && f['pais'].invalid" class="alert">
-                    <div *ngIf="f['pais'].errors?.['required']">(Preencha o campo acima)</div>
+                    placeholder="ex: Portugues">
+                <div *ngIf="f['idioma'].touched && f['idioma'].invalid" class="alert">
+                    <div *ngIf="f['idioma'].errors?.['required']">(Preencha o campo acima)</div>
                 </div>
             </div>
             <div class="atributos">

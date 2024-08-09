@@ -38,8 +38,8 @@
 
                     <div class="flex">
                         <div class="card" *ngFor="let curso of venda.cursoVendas">
-                            <img [src]="curso.curso.imagem" alt="{{ curso.curso.clube }}">
-                                <h4>{{ curso.curso.clube }}</h4>
+                            <img [src]="curso.curso.imagem" alt="{{ curso.curso.linguagem }}">
+                                <h4>{{ curso.curso.linguagem }}</h4>
                                 <h5>R$ {{ curso.valor }}</h5>
                                 <h4>Quantidade: {{curso.quantidade}}</h4>
                                 <button (click)="quantidadeCurso(curso)">Quantidade</button>
@@ -54,8 +54,8 @@
 <div class="mostrar" *ngIf="atualizar">
     <div class="adicionar">
       <button class="close" (click)="fechar()">Fechar</button>
-          <img [src]="this.cursoVenda.curso.imagem" alt="{{ this.cursoVenda.curso.clube }}">
-        <h3>{{ this.cursoVenda.curso.clube }}</h3>
+          <img [src]="this.cursoVenda.curso.imagem" alt="{{ this.cursoVenda.curso.linguagem }}">
+        <h3>{{ this.cursoVenda.curso.linguagem }}</h3>
         <h4>{{ this.cursoVenda.curso.ano }}</h4>
         <h5>R$ {{ this.cursoVenda.curso.valor }}</h5>
 

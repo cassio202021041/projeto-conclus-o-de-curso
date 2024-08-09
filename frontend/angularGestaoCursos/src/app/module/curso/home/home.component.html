@@ -1,8 +1,8 @@
 <app-header></app-header>
 <main>
   <div class="titulo">
-    <h3>Cursos Java para iniciante</h3>
-    <img class="escudo" src="../../../../assets/images/cursoJava.png" alt="">
+    <h3>Cursos Gratuitos para iniciantes</h3>
+    <img class="escudo" src="../../../../assets/images/rastreio.png" alt="">
   </div>
   <div class="imagens">
     <button class="hover" (click)="mostrarImagemAnterior()"><img class="left" src="../../../../assets/images/botao_proximo.png" alt=""></button>
@@ -12,19 +12,19 @@
   <button [routerLink]="['/search', '|Cursos Java']" class="colecao titulo comprar hover"> <img class="escudo" src="../../../../assets/images/cursoJava.png" alt="">Cursos Java</button>
   <div class="faixa_vermelha">
     <div class="margem">
-      <button class="hover" [disabled]="!passadorEsquerda"  (click)="removeContadorPaises()"><img class="left" src="../../../../assets/images/botao_proximo.png" alt=""></button>
+      <button class="hover" [disabled]="!passadorEsquerda"  (click)="removeContadorIdiomas()"><img class="left" src="../../../../assets/images/botao_proximo.png" alt=""></button>
     </div>
-    <div class="agrupa hover" *ngFor="let pais of paises.slice(indicePaises, indicePaises + 5)">
-      <div [routerLink]="['/search2/', pais.nomeBusca]" class="circle">
-        <img src="{{ pais.imagem }}" alt="{{ pais.nome }}">
+    <div class="agrupa hover" *ngFor="let idioma of idiomas.slice(indiceIdiomas, indiceIdiomas + 5)">
+      <div [routerLink]="['/search2/', idioma.nomeBusca]" class="circle">
+        <img src="{{ idioma.imagem }}" alt="{{ idioma.nome }}">
       </div>
-      <h4>{{ pais.nome }}</h4>
+      <h4>{{ idioma.nome }}</h4>
     </div>
     <div class="margem">
-      <button class="hover" [disabled]="!passadorDireita" (click)="addContadorPaises()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
+      <button class="hover" [disabled]="!passadorDireita" (click)="addContadorIdiomas()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
     </div>
   </div>
-  <h3 class="titulo home_titulo">Cusos 2024</h3>
+  <h3 class="titulo home_titulo">Cusos  2024</h3>
   <div class="filtro">
     <label for="opcoes">Filtro:</label>
     <select id="opcoes" [(ngModel)]="opcaoSelecionada" name="opcaoSelecionada" (change)="selecaoAlterada()">
@@ -37,8 +37,8 @@
     </select>
   </div>
     <div [routerLink]="['/details', curso.id]" class="card hover" *ngFor="let curso of cursosFiltradas">
-      <img  [src]="curso.imagem" alt="{{ curso.clube }}">
-      <h3>{{ curso.clube }}</h3>
+      <img  [src]="curso.imagem" alt="{{ curso.linguagem }}">
+      <h3>{{ curso.linguagem }}</h3>
       <h4>{{ curso.ano }}</h4>
       <h5>R$ {{ curso.valor }}</h5>
     </div>

@@ -9,7 +9,7 @@ main{
 }
 .hover:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 .agrupa:hover{
@@ -44,23 +44,23 @@ main{
         color: #1f796c;
     }
     .card > * {
-        margin-left: 1vw; 
+        margin-left: 1vw;
     }
 
     .carrinho {
-        position: fixed; 
-        bottom: 2vw; 
-        right: 1vw; 
-        width: 10vw; 
+        position: fixed;
+        bottom: 2vw;
+        right: 1vw;
+        width: 10vw;
         height: 10vw;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
-        z-index: 999; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 999;
       }
       .carrinho img{
         width: 5vw;
         height: 5vw;
-    
+
       }
 
 }
@@ -139,7 +139,7 @@ main{
 .right{
     width: 3vw;
     height: auto;
-    
+
 }
 .left{
     width: 3vw;
@@ -153,17 +153,17 @@ main{
     width: 10vw;
 }
 .circle >  *{
-    
+
 }
 .circle img{
     width: 8vw;
     margin-top: 1vw;
-    
+
 }
 .agrupa h4{
     margin-left: 0vw;
     font-size: 2vw;
-    
+
 }
 .agrupa{
   width: fit-content;
@@ -192,18 +192,18 @@ main{
 }
 @media (max-width: 767px) {
     .card {
-      width: 40%; 
-      height: fit-content; 
+      width: 40%;
+      height: fit-content;
       border-radius: 20px;
-      margin-left: 5vw; 
-      margin-bottom:5vw; 
-      font-size: 1vw; 
+      margin-left: 5vw;
+      margin-bottom:5vw;
+      font-size: 1vw;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
-  
+
     .card img {
-      width: 80%; 
-      height: auto; 
+      width: 80%;
+      height: auto;
       margin-top: 3vw;
     }
     .card h3{
@@ -218,23 +218,23 @@ main{
         color: #1f796c;
     }
     .card > * {
-        margin-left: 3vw; 
+        margin-left: 3vw;
     }
      .carrinho {
 
-        position: fixed; 
+        position: fixed;
         bottom: 7vw;
-        right: 1vw; 
-        width: 20vw; 
+        right: 1vw;
+        width: 20vw;
         height: 20vw;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
-        z-index: 999; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 999;
       }
       .carrinho img{
         width: 10vw;
         height: 10vw;
-    
+
       }
       .filtro{
         margin-bottom: 7vw;
@@ -275,15 +275,15 @@ main{
         margin-left: 0vw;
         margin-right: 0vw;
         padding: 1vw;
-        
-      
-       
+
+
+
       }
       .margem button img{
         width: 3.5vw;
         height: auto;
       }
-    
+
     .circle{
         align-items: center;
         height: 8vw;
@@ -292,14 +292,14 @@ main{
     .circle img{
         width: 13vw;
         margin-top: 1vw;
-        
+
     }
     .agrupa h4{
         margin-top: 6vw;
         margin-left: 2vw;
         font-size: 2.5vw;
-        
-        
+
+
     }
     .home_titulo{
         font-size: 4vw;
