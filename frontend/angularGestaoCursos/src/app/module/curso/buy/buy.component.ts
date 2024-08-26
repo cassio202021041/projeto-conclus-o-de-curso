@@ -25,6 +25,7 @@ export class BuyComponent implements OnInit{
   valorCompra!:number;
 
 
+
   //compra com cartao
   num1Cartao!:number;
   num2Cartao!:number;
@@ -50,11 +51,13 @@ export class BuyComponent implements OnInit{
     public alunoService: AlunoService,
     public vendaService: VendaService,
     private router: Router
+
     ) {
     this.cursos = cursoService.getCursosCarrinho();
     this.valorCompra = cursoService.valorCarrinho();
     this.opcaoPagamento= 'boleto';
   }
+  
 
   ngOnInit(): void {
     if(this.cursos.length <=0){
@@ -74,6 +77,9 @@ export class BuyComponent implements OnInit{
       }
 
     }
+  }
+  obterCurso(){
+    this.router.navigate(['/']);
   }
 
   buscaAluno(){

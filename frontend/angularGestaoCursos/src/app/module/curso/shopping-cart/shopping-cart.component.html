@@ -2,7 +2,7 @@
 <app-loading *ngIf="carregar"></app-loading>
 <main *ngIf="notEmpty">
 <button class="voltar" [routerLink]="['']"><img src="../../../../assets/images/voltar.png" alt=""></button>
-<h1 class="titulo">Seu carrinho:</h1>
+<h1 class="titulo">Lista de Desejos:</h1>
 <div class="card" *ngFor="let curso of cursos">
     <a [routerLink]="['/details', curso.curso.id]">
       <img [src]="curso.curso.imagem" alt="{{ curso.curso.linguagem }}">
@@ -14,12 +14,12 @@
       <h3>Quantidade: {{ curso.quantidade }}</h3>
     </div>
     <div class="buttons">
-      <button (click)="quantidadeCursoCarrinho(curso)">Mudar Quantidade</button>
+      <!-- <button (click)="quantidadeCursoCarrinho(curso)">Mudar Quantidade</button> -->
       <button (click)="removeCursoCarrinho(curso)">Remover</button>
     </div>
   </div>
-  <h2 class="titulo">Valor do carrinho: <h2 class="price">R$ {{valorCompra}}</h2></h2>
-  <button class="payment" [routerLink]="['/buy']">Realizar pagamento</button>
+  <h2 class="titulo">Valor a ser pago: <h2 class="price">R$ {{valorCompra}}</h2></h2>
+  <button class="payment" [routerLink]="['/buy']">Solicitar Curso</button>
 </main>
 <div class="mostrar" *ngIf="atualizar">
     <div class="adicionar">
@@ -44,6 +44,6 @@
   </div>
   <main *ngIf="!notEmpty">
     <button class="voltar" [routerLink]="['']"><img src="../../../../assets/images/voltar.png" alt=""></button>
-    <h1 class="alerta">Seu carrinho está vazio :(</h1>
+    <h1 class="alerta">Sua lista de desejos está vazio :</h1>
   </main>
 <app-footer></app-footer>

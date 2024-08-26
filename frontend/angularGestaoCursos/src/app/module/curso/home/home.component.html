@@ -9,7 +9,7 @@
     <img class="home_picture" [src]="imagens[imagemAtualIndex]" alt="Imagem">
     <button class="hover" (click)="mostrarProximaImagem()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
   </div>
-  <button [routerLink]="['/search', '|Cursos Java']" class="colecao titulo comprar hover"> <img class="escudo" src="../../../../assets/images/cursoJava.png" alt="">Cursos Java</button>
+  <button [routerLink]="['/videos']" class="colecao titulo comprar hover">Acessar Cursos</button>
   <div class="faixa_vermelha">
     <div class="margem">
       <button class="hover" [disabled]="!passadorEsquerda"  (click)="removeContadorIdiomas()"><img class="left" src="../../../../assets/images/botao_proximo.png" alt=""></button>
@@ -24,7 +24,6 @@
       <button class="hover" [disabled]="!passadorDireita" (click)="addContadorIdiomas()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
     </div>
   </div>
-  <h3 class="titulo home_titulo">Cusos  2024</h3>
   <div class="filtro">
     <label for="opcoes">Filtro:</label>
     <select id="opcoes" [(ngModel)]="opcaoSelecionada" name="opcaoSelecionada" (change)="selecaoAlterada()">
@@ -42,9 +41,7 @@
       <h4>{{ curso.ano }}</h4>
       <h5>R$ {{ curso.valor }}</h5>
     </div>
-    <button class="carrinho hover" [routerLink]="['/shopping_cart']">
-      <img src="../../../../assets/images/carrinho-de-compras.png" alt="Carrinho">
-    </button>
+
   </main>
 <app-loading *ngIf="carregar"></app-loading>
 <app-footer></app-footer>

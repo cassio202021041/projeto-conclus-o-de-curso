@@ -18,6 +18,8 @@ import { CreateVendaComponent } from "./module/venda/create-venda/create-venda.c
 import { DetailsVendaComponent } from "./module/venda/details-venda/details-venda.component";
 import { EditVendasComponent } from "./module/venda/edit-vendas/edit-vendas.component";
 import { ManagementVendasComponent } from "./module/venda/management-vendas/management-vendas.component";
+import { VideoHomeComponent } from "./module/video/video-home/video-home.component";
+import { VideoFormComponent } from "./module/video/video-form/video-form.component";
 
 
 const routes: Routes = [
@@ -40,6 +42,11 @@ const routes: Routes = [
   { path: 'shopping_cart', component: ShoppingCartComponent},
   { path: 'buy', component: BuyComponent},
   { path: 'tracking', component: TrackingComponent},
+  { path: 'videos', component: VideoHomeComponent },
+  { path: '**', redirectTo: '' },
+  { path: 'add', component: VideoFormComponent },
+  { path: 'editvideo/:id', component: VideoFormComponent },
+
 ];
 
 

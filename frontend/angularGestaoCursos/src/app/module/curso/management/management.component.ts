@@ -30,7 +30,7 @@ export class ManagementComponent implements OnInit {
   }
 
     deleteCurso(id: number): void {
-      if (confirm('Tem certeza que deseja excluir esta curso?')) {
+      if (confirm('Tem certeza que deseja excluir este curso?')) {
         this.carregar=true;
         this.cursoService.delete(id).subscribe({
           next: () => {

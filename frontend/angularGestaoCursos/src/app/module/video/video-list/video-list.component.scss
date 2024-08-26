@@ -1,0 +1,66 @@
+/* styles.css ou component-specific .scss */
+.container {
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  padding: 20px;
+}
+
+h2 {
+  color: #e74c3c; /* Cor vermelha vibrante */
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
+}
+
+li:last-child {
+  border-bottom: none; /* Remove a borda do último item */
+}
+
+button {
+  background-color: #e74c3c; /* Cor do botão de delete */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b; /* Cor do botão ao passar o mouse */
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #e74c3c; /* Cor do link de adicionar vídeo */
+  text-decoration: none;
+  font-size: 1rem;
+  border: 1px solid #e74c3c; /* Adiciona uma borda ao link */
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  background-color: #e74c3c; /* Cor de fundo do link ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
+  text-decoration: none;
+}

@@ -74,7 +74,7 @@ input{
     width: fit-content;
     align-items: center;
     font-size: 5vw;
-    
+
 }
 .pedido h1{
     font-size: 5vw;
@@ -83,4 +83,11 @@ input{
     width: 90%;
     margin-left: 5vw;
 }
+.mensagem-erro {
+ 
+ color: red;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
 }
