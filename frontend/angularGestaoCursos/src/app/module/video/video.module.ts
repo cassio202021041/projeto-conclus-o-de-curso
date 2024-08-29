@@ -5,6 +5,7 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { VideoFormComponent } from './video-form/video-form.component';
 import { FormsModule } from '@angular/forms';
 import { SafeUrlPipe } from './safe-url.pipe';
+import { AdminModule } from "../admin/admin.module";
 
 
 
@@ -21,10 +22,9 @@ import { SafeUrlPipe } from './safe-url.pipe';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
 
-
-  ],
+],
   exports: [
     VideoListComponent,
     VideoFormComponent

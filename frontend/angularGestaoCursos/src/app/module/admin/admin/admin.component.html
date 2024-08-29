@@ -1,0 +1,10 @@
+<div class="home-container">
+  <h1>Bem-vindo, Administrador!</h1>
+  <ul class="admin-options">
+    <li *ngFor="let option of adminOptions">
+      <button (click)="gerenciarAlunos(option)">{{ option }}</button>
+    </li>
+  </ul>
+
+</div>
+<app-video-form></app-video-form>

@@ -2,7 +2,7 @@
 form {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@ label {
 
 input[type="text"] {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   margin-bottom: 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -34,7 +34,7 @@ input[type="text"] {
 input[type="text"]:focus {
   border-color: #e74c3c; /* Cor da borda quando o input está em foco */
   outline: none;
-  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+  box-shadow: 0 0 5px rgba(71, 60, 231, 0.5);
 }
 
 button {

@@ -29,11 +29,7 @@
     <select id="opcoes" [(ngModel)]="opcaoSelecionada" name="opcaoSelecionada" (change)="selecaoAlterada()">
       <option value="Todas">Github</option>
       <option value="Home">Linkedin</option>
-      <option value="Away">Estagios</option>
-      <option value="Fan">Cursos Gratuitor</option>
-      <option value="Goalkeeper">Cursos Parceiros</option>
-      <option value="Special">Cursos especiais</option>
-    </select>
+       </select>
   </div>
     <div [routerLink]="['/details', curso.id]" class="card hover" *ngFor="let curso of cursosFiltradas">
       <img  [src]="curso.imagem" alt="{{ curso.linguagem }}">

@@ -1,3 +1,4 @@
+import { AdminRoutingModule } from './module/admin/admin-routing.module';
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
@@ -7,8 +8,7 @@ import { VendaModule } from "./module/venda/venda.module";
 import { AlunoModule } from "./module/aluno/aluno.module";
 import { VideoModule } from "./module/video/video.module";
 import { FormsModule } from "@angular/forms";
-import { SafeUrlPipe } from "./module/video/safe-url.pipe";
-import { VideoListComponent } from "./module/video/video-list/video-list.component";
+import { AdminModule } from "./module/admin/admin.module";
 
 
 
@@ -17,6 +17,9 @@ import { VideoListComponent } from "./module/video/video-list/video-list.compone
 @NgModule({
   declarations: [
     AppComponent,
+    
+
+
 
 
   ],
@@ -29,7 +32,9 @@ import { VideoListComponent } from "./module/video/video-list/video-list.compone
     VendaModule,
     VideoModule,
     FormsModule,
-    
+    AdminModule,
+    AdminRoutingModule
+
 
 
 
