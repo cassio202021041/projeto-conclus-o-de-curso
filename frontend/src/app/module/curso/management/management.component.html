@@ -1,0 +1,37 @@
+<app-header></app-header>
+<app-loading *ngIf="carregar"></app-loading>
+<main>
+    <div class="pesquisa">
+        <label class="busca">Digite o nome da curso:
+            <input type="text"  [(ngModel)]="valorBusca" (keyup.enter)="busca()">
+            <button (click)="busca()">Buscar</button>
+        </label>
+    </div>
+    <div class="modulos">
+        <a [routerLink]="['/management']">
+            <button class="update">Cursos</button>
+        </a>
+        <a [routerLink]="['/alunos']">
+            <button class="update">Alunos</button>
+        </a>
+        <a [routerLink]="['/vendas']">
+            <button class="update">Inscrições</button>
+        </a>
+    </div>
+    <img [routerLink]="['/create']" class="create" src="../../../../assets/images/botao_add.png" alt="" >
+    <div class="card" *ngFor="let curso of cursosFiltradas">
+        <img [src]="curso.imagem" alt="{{ curso.linguagem }}">
+        <div class="infos">
+            <h3>{{ curso.linguagem }}</h3>
+            <h4>{{ curso.ano }}</h4>
+            <h4>R$ {{ curso.valor }}</h4>
+            <h4>Quantidade: {{ curso.quantidade }}</h4>
+        </div>
+        <div class="buttons">
+                <button [routerLink]="['/details', curso.id]">Visualizar</button>
+                <button [routerLink]="['/edit', curso.id]">Atualizar</button>
+            <button (click)="deleteCurso(curso.id)">Deletar</button>
+        </div>
+    </div>
+  </main>
+<app-footer></app-footer>

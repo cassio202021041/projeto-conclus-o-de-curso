@@ -1,0 +1,30 @@
+<!-- <app-header></app-header> -->
+
+<div> <h1 class="topo">Cursos Gratuito 2024</h1></div>
+
+<main>
+  <div class="compra">
+      <label>
+          <h3>Digite o número da inscrição</h3>
+          <input type="number" placeholder="" [(ngModel)]="id">
+      </label>
+      <button (click)="enviar()">Conferir</button>
+  </div>
+  <div class="pedido" *ngIf="venda">
+      <h1>Aluno inscrito!</h1>
+      <div class="card" *ngFor="let curso of cursos">
+          <img [src]="curso.curso.imagem" alt="{{ curso.curso.linguagem }}">
+          <div class="infos">
+              <h3>{{ curso.curso.linguagem }}</h3>
+              <h4>{{ curso.curso.ano }}</h4>
+              <h4>R$ {{ curso.valor }}</h4>
+              <h4>Quantidade: {{ curso.quantidade }}</h4>
+          </div>
+      </div>
+  </div>
+  <div class="mensagem-erro" *ngIf="mensagemErro">
+      <h2>{{ mensagemErro }}</h2>
+  </div>
+</main>
+
+<app-footer></app-footer>

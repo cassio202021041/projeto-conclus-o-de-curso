@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjetoJavaLojaApplication<projeto-java-loja>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.lojacursos.projetojavaloja.ProjetoJavaLojaApplication",
+            "projectName": "projeto-java-loja",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjetoJavaLojaApplication<projeto-java-loja>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.lojacursos.projetojavaloja.ProjetoJavaLojaApplication",
+            "projectName": "projeto-java-loja",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjetoJavaLojaApplication<projeto-java-loja>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.lojacursos.projetojavaloja.ProjetoJavaLojaApplication",
+            "projectName": "projeto-java-loja",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

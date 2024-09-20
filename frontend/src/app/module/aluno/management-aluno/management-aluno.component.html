@@ -1,0 +1,38 @@
+<app-header></app-header>
+<app-loading *ngIf="carregar"></app-loading>
+<main>
+    <div class="pesquisa">
+        <label class="busca">Digite o nome do aluno:
+            <input type="text"  [(ngModel)]="valorBusca" (keyup.enter)="busca()">
+            <button (click)="busca()">Buscar</button>
+        </label>
+    </div>
+    <div class="modulos">
+        <a [routerLink]="['/management']">
+            <button class="update">Cursos</button>
+        </a>
+        <a [routerLink]="['/alunos']">
+            <button class="update">Alunos</button>
+        </a>
+        <a [routerLink]="['/vendas']">
+            <button class="update">Inscrições</button>
+        </a>
+    </div>
+    <img [routerLink]="['/alunos/create/']" class="create" src="../../../../assets/images/botao_add.png" alt="" >
+    <div class="card" *ngFor="let aluno of alunosFiltrados">
+        <div class="infos">
+            <h3>{{ aluno.nome }}</h3>
+            <h4>CPF: {{ aluno.cpf }}</h4>
+            <a [routerLink]="['/alunos/details', aluno.id]">
+                <button>Aluno Inscrito</button>
+            </a>
+        </div>
+        <div class="buttons">
+            <a [routerLink]="['/alunos/edit', aluno.id]">
+                <button>Atualizar</button>
+            </a>
+            <button (click)="deleteAluno(aluno.id)">Deletar</button>
+        </div>
+    </div>
+  </main>
+<app-footer></app-footer>
