@@ -69,7 +69,7 @@ export class EditComponent implements OnInit {
     this.curso.imagem = this.form.value.imagem;
       this.cursoService.update(this.curso).subscribe(res => {
         this.carregar=false;
-        console.log('Curso atualizada com sucesso!');
+        console.log('Curso atualizado com sucesso!');
         this.router.navigateByUrl('details/'+this.curso.id), { target: '_blank' };
     })
   }

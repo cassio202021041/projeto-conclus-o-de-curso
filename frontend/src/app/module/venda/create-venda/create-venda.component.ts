@@ -34,7 +34,7 @@ export class CreateVendaComponent implements OnInit{
         this.id= this.form.get('id')!.value;
         this.vendaService.create(this.id).subscribe(res => {
           this.carregar = false;
-             alert('Venda criada com sucesso!');
+             alert('Atualize os dados a seguir!');
              this.router.navigateByUrl('vendas/edit/'+res);
         })
       }

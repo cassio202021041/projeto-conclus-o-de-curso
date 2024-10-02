@@ -4,11 +4,11 @@
     <main>
         <div class="edit">
             <div class="principal">
-                <h1>Atualizar Venda</h1>
+                <h1>Atualizar os dados da inscrição</h1>
                 <form [formGroup]="form">
                         <h1>Nome: {{ this.venda.aluno.nome }}</h1>
                         <h1>CPF: {{ this.venda.aluno.cpf }}</h1>
-                        <h1>Valor da compra: {{ this.venda.valor }}</h1>
+                        <h1>Valor da Doação: {{ this.venda.valor }}</h1>
                     <div class="atributos">
                         <label for="aluno_id">ID do aluno:</label>
                         <input
@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="atributos">
-                        <label for="aluno_id">Data da compra:</label>
+                        <label for="aluno_id">Data :</label>
                         <input
                             formControlName="data_compra"
                             id="data_compra"
@@ -68,7 +68,7 @@
           placeholder="{{this.cursoVenda.quantidade}}"
           max="{{ this.cursoVenda.curso.quantidade }}"
         >
-        <button (click)="AtualizaCursosVenda()">Atualizar quantidade</button>
+        <button (click)="AtualizaCursosVenda()">quantidade</button>
       </div>
     </div>
   </div>

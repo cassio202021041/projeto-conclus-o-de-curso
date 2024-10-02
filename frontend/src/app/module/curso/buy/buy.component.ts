@@ -45,6 +45,8 @@ export class BuyComponent implements OnInit{
   opcaoPagamento:string = '';
   meioPagamento: boolean = false;
   data:string = '';
+  isImageOpen: boolean = false;
+
 
   constructor(
     public cursoService: CursoService,
@@ -57,13 +59,21 @@ export class BuyComponent implements OnInit{
     this.valorCompra = cursoService.valorCarrinho();
     this.opcaoPagamento= 'boleto';
   }
-  
+
 
   ngOnInit(): void {
     if(this.cursos.length <=0){
       this.router.navigateByUrl('');
     }
 
+
+  }
+  openImage() {
+    this.isImageOpen = true;
+  }
+
+  closeImage() {
+    this.isImageOpen = false;
   }
 
   onCpfChange() {
@@ -114,6 +124,46 @@ export class BuyComponent implements OnInit{
 
   }
 
+  // efetuarCompra(){
+  //   let validarDados = false;
+  //   if(this.opcaoPagamento=='cartao'){
+  //     if(!this.num1Cartao || !this.num2Cartao || !this.num3Cartao || !this.finalCartao || !this.nomeCartao || !this.cvvCartao){
+  //       alert('Preencha todos os dados do cartão');
+  //       return;
+  //     }
+  //   }
+  //   this.carregar=true;
+  //   this.venda = {} as Venda
+  //   this.venda.cursoVendas = this.cursos;
+  //   this.venda.aluno = this.aluno;
+
+
+  //   console.log(this.venda);
+  //   this.vendaService.save(this.venda).subscribe((res)=>{
+
+  //     if (res.cursoVendas) {
+  //       this.aprovado = true;
+  //       this.cursoService.limpaCarrinho();
+
+  //       this.meioPagamento=true;
+
+  //       if(this.opcaoPagamento=='pix'){
+  //         this.pix = true;
+  //      }
+  //      else if(this.opcaoPagamento=='cartao'){
+  //       this.cartao = true;
+
+  //      }
+  //      else{
+  //       this.dataBoleto();
+  //       this.boleto = true;
+  //      }
+  //     }
+
+  //    this.carregar=false;
+
+  //   })
+  // }
   efetuarCompra(){
     let validarDados = false;
     if(this.opcaoPagamento=='cartao'){
@@ -155,7 +205,6 @@ export class BuyComponent implements OnInit{
     })
   }
 
-
   opcCompra(opcao:string){
     this.opcaoPagamento=opcao;
     if(this.opcaoPagamento=='cartao'){
@@ -168,8 +217,6 @@ export class BuyComponent implements OnInit{
     }
 
   }
-
-
   dataBoleto(){
     const dataAtual = new Date();
 
@@ -197,6 +244,34 @@ export class BuyComponent implements OnInit{
       }
     }
   }
+
+  // dataBoleto(){
+  //   const dataAtual = new Date();
+
+  //   const dia = String(dataAtual.getDate()).padStart(2, '0');
+  //   const mes = String(dataAtual.getMonth() + 1).padStart(2, '0');
+  //   const ano = dataAtual.getFullYear();
+
+  //   this.data = `${dia}/${mes}/${ano}`;
+
+  // }
+
+  //  gerarNumeroAleatorio(min: number, max: number): number {
+  //   return Math.floor(Math.random() * (max - min + 1)) + min;
+  // }
+
+  // verificarTamanho(event: any, proximoInputId: string): void {
+  //   const input = event.target;
+  //   const valor = input.value;
+
+  //   if (valor.length === 4 && proximoInputId) {
+  //     const proximoInput = document.getElementById(proximoInputId);
+
+  //     if (proximoInput) {
+  //       proximoInput.focus();
+  //     }
+  //   }
+  // }
 
 
 }

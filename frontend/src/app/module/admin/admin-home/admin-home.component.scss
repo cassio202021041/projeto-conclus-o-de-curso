@@ -1,18 +1,45 @@
-.home-container {
+.admin-container {
+  display: flex;
+  flex-direction: column; /* Para alinhar os cards verticalmente */
+  align-items: center; /* Centraliza os cards */
+  gap: 20px; /* Espaço entre os cards */
   padding: 20px;
 }
 
-.admin-options {
-  list-style-type: none;
-  padding: 0;
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Ajuste conforme necessário */
 }
 
-.admin-options li {
-  margin: 10px 0;
+.card-gray-light {
+  background-color: #f0f0f0; /* Cinza claro */
 }
 
-.admin-options button {
-  padding: 10px 20px;
-  font-size: 16px;
+.card-gray-medium {
+  background-color: #d0d0d0; /* Cinza médio */
+}
+
+.card-gray-dark {
+  background-color: #b0b0b0; /* Cinza escuro */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.update {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
   cursor: pointer;
+}
+
+.update:hover {
+  background-color: #0056b3;
 }

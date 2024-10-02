@@ -75,7 +75,7 @@ export class EditVendasComponent implements OnInit{
 
       this.vendaService.update(this.venda).subscribe(res => {
         this.carregar = false;
-        alert('Venda atualizada com sucesso!');
+        alert('Inscrição atualizada com sucesso!');
         this.vendaService.find(this.id).subscribe((data: Venda)=>{
         this.venda = data;});
 
@@ -85,7 +85,7 @@ export class EditVendasComponent implements OnInit{
     this.carregar = true;
     curso.quantidade = 0;
     this.vendaService.AtualizaCursosVenda(curso).subscribe(res => {
-      alert('Venda atualizada com sucesso!');
+      alert('Inscrição atualizada com sucesso!');
       this.vendaService.find(this.id).subscribe((data: Venda)=>{
       this.venda = data;});
       this.carregar = false;
@@ -109,7 +109,7 @@ export class EditVendasComponent implements OnInit{
     console.log(this.cursoVenda.quantidade);
     this.vendaService.AtualizaCursosVenda(this.cursoVenda).subscribe(res => {
 
-      alert('Venda atualizada com sucesso!');
+      alert('Inscrição atualizada com sucesso!');
       this.vendaService.find(this.id).subscribe((data: Venda)=>{
       this.venda = data;
     });

@@ -1,12 +1,13 @@
 .card >*{
-    margin-left: 5vw;
+    margin-left: 10vw;
+
 
 }
 .infos button{
     margin-left: -1vw;
     background-color: #F4483C;
     color: white;
-  
+
 }
 @media (max-width: 767px) {
 .card{

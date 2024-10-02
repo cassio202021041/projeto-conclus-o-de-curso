@@ -3,13 +3,13 @@
 <body>
     <main>
     <div class="principal">
-        <h1>Nova Venda</h1>
+        <h1>Nova Inscrição</h1>
         <form [formGroup]="form" (ngSubmit)="submit()">
             <div class="atributos">
-                <label for="nome">ID do aluno:</label>
-                <input 
+                <label for="nome">Digite a inscrição do aluno:</label>
+                <input
                     formControlName="id"
-                    id="id" 
+                    id="id"
                     type="number">
                 <div *ngIf="f['id'].touched && f['id'].invalid" class="alert">
                     <div *ngIf="f['id'].errors?.['required']">(Preencha o campo acima)</div>

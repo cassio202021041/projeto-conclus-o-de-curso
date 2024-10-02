@@ -1,4 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap');
+.mat-toolbar {
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.inscreva-se {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: flex-end; /* Justifica à direita */
+    margin-left: auto; /* Move para a direita */
+    margin-right: 20px; /* Espaçamento à direita (opcional) */
+}
+
+.inscreva-se h2 {
+    margin: 0; /* Remove margens do título */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    margin-right: 10px; /* Espaçamento entre o título e a imagem */
+}
+
+.create {
+    width: 50px; /* Largura da imagem (ajuste conforme necessário) */
+    height: auto; /* Mantém a proporção */
+}
+
+.rastreio {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Alinha verticalmente no centro */
+    color: #ffffff; /* Cor do texto */
+}
+
+.rastreio img {
+    width: 40px; /* Largura da imagem (ajuste conforme necessário) */
+    height: auto; /* Mantém a proporção */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
 header{
     box-shadow: 0px 15px 10px -15px #111;
     font-family: 'Lexend', sans-serif;
@@ -9,7 +47,7 @@ div{
 }
 header .search{
     margin-left: 30vw;
-    background-color: #fff;
+    background-color: #746f6f;
 }
 header h1{
     margin-left: 44vw;
@@ -123,7 +161,8 @@ img{
     display: flex;
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin-right: 3vw;
+    margin-right: 50px;
+    margin-bottom: 100px;
     width: 40%;
 }
 h3{

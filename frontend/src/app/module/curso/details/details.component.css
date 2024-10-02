@@ -7,7 +7,7 @@ main{
     margin-top: 2vw;
 }
 .carrinho:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -17,7 +17,7 @@ main{
     div{
         display: flex;
         align-items: center;
-    
+
     }
     div> * {
     display:block;
@@ -46,38 +46,38 @@ main{
         color: #1f796c;
     }
     .card > * {
-        margin-left: 1vw; 
+        margin-left: 1vw;
     }
 
     .carrinho {
         margin-right: 3vw;
         margin-bottom: 4vw;
-        position: fixed; 
-        bottom: 2vh; 
-        right: 1vh; 
-        width: 10vh; 
+        position: fixed;
+        bottom: 2vh;
+        right: 1vh;
+        width: 10vh;
         height: 10vh;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
-        z-index: 999; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 999;
       }
       .carrinho img{
         width: 5vh;
         height: 5vh;
-    
+
       }
 
 
 .add:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 .add{
     background-color: #1f796c;
     color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 15vw;
     height: 3vw;
     font-size: 0.5vw;
@@ -87,8 +87,8 @@ main{
     margin-bottom: 3vw;
     background-color: #F4483C;
     color: white;
-    width: 10vw;
-    height: 5vw;
+    width: 5vw;
+    height: 2.5vw;
     font-size: 2vw;
     border-radius: 1vw;
     border-color: #F4483C;
@@ -129,38 +129,38 @@ main{
         color: #1f796c;
     }
     .card > * {
-        margin-left: 1vw; 
+        margin-left: 1vw;
         margin-top: 1px;
     }
 
     .carrinho {
         margin-right: 3vw;
         margin-bottom: 12vw;
-        position: fixed; 
-        bottom: 2vw; 
-        right: 1vw; 
-        width: 25vw; 
+        position: fixed;
+        bottom: 2vw;
+        right: 1vw;
+        width: 25vw;
         height: 25vw;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
-        z-index: 999; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 999;
       }
       .carrinho img{
         width: 10vw;
         height: 10vw;
-    
+
       }
 
 
 .add:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 .add{
     background-color: #1f796c;
     color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 60vw;
     height: 15vw;
     font-size: 2vw;

@@ -45,12 +45,12 @@ export class CreateComponent implements OnInit{
         this.cursoService.create(this.form.value).subscribe({
           next: (data:Curso) => {
             this.carregar=false;
-            alert('Curso criada com sucesso!');
+            alert('Curso criado com sucesso!');
             this.router.navigateByUrl('details/'+data.id), { target: '_blank' };
           },
           error: (error) => {
             this.carregar=false;
-            alert('Erro ao criar a curso.');
+            alert('Erro ao criar curso.');
           }
         })
       }

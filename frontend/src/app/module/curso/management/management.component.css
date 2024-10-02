@@ -18,13 +18,14 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .create:hover{
-    transform: scale(1.1); 
+    transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 .pesquisa{
     width: 100%;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .busca{
     margin-left: 25vw;
@@ -44,7 +45,7 @@ main{
 }
 .card{
     margin-left: 10vw;
-    
+
     font-size: 1vw;
     display: inline-flex;
     height: 12vw;
@@ -128,7 +129,7 @@ button{
 
 
     }
-    
+
     button{
         height: 4vw;
         width: 10vw;
@@ -137,10 +138,10 @@ button{
         cursor: pointer;
         font-size: 1vw;
         margin-left: 10vw;
-        
+
     }
     .buttons button{
-        
+
         font-size: 5vw;
         height: 8vw;
         width: 42vw;
@@ -156,12 +157,12 @@ button{
     .busca{
         font-size: 3vw;
         margin-left: 1vw;
-        
+
     }
     .busca input{
         height: 5vw;
         width: 30vw;
-        
+
     }
     .busca button{
         background-color: #F4483C;
@@ -172,5 +173,5 @@ button{
         border-radius: 2vw;
     }
     }
-   
+
 

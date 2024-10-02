@@ -7,7 +7,7 @@
             <button (click)="busca()">Buscar</button>
         </label>
     </div>
-    <div class="modulos">
+    <!-- <div class="modulos">
         <a [routerLink]="['/management']">
             <button class="update">Cursos</button>
         </a>
@@ -17,8 +17,9 @@
         <a [routerLink]="['/vendas']">
             <button class="update">Inscrições</button>
         </a>
-    </div>
-    <img [routerLink]="['/alunos/create/']" class="create" src="../../../../assets/images/botao_add.png" alt="" >
+    </div> -->
+    <div><img [routerLink]="['/alunos/create/']" class="create" src="../../../../assets/images/botao_add.png" alt="" ></div>
+
     <div class="card" *ngFor="let aluno of alunosFiltrados">
         <div class="infos">
             <h3>{{ aluno.nome }}</h3>

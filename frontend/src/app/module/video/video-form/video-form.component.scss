@@ -1,65 +1,55 @@
-/* styles.css ou component-specific .scss */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 25px;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+h2 {
+  color: #021a1b; /* Heading color */
+  margin-bottom: 1em; /* Space below the heading */
 }
 
-h2 {
-  color: #e74c3c; /* Cor vermelha vibrante */
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 20px;
+form {
+  background-color: #f9f9f9; /* Light background for the form */
+  padding: 2em; /* Padding inside the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px; /* Max width for the form */
+  margin: 20px auto; /* Center the form */
 }
 
 label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
+  display: block; /* Labels on new lines */
+  margin-bottom: 0.5em; /* Space below labels */
+  color: #021a1b; /* Label color */
 }
 
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
+input {
+  width: 100%; /* Full width input */
+  padding: 0.5em; /* Padding inside inputs */
+  margin-bottom: 1em; /* Space below inputs */
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners */
 }
 
-input[type="text"]:focus {
-  border-color: #e74c3c; /* Cor da borda quando o input está em foco */
-  outline: none;
-  box-shadow: 0 0 5px rgba(71, 60, 231, 0.5);
+input:focus {
+  border-color: #1e0fa8; /* Change border color on focus */
+  outline: none; /* Remove default outline */
 }
 
 button {
-  background-color: #e74c3c; /* Cor do botão */
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: #1e0fa8; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.5em 1em; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 1em; /* Space above button */
 }
 
 button:hover {
-  background-color: #c0392b; /* Cor do botão ao passar o mouse */
+  background-color: #1c1b8a; /* Darker color on hover */
 }
 
-a {
-  display: inline-block;
-  margin-top: 20px;
-  color: #e74c3c; /* Cor do link */
-  text-decoration: none;
-  font-size: 1rem;
+button[type="button"] {
+  background-color: #ff3b3b; /* Cancel button color */
+  margin-left: 1em; /* Space between buttons */
 }
 
-a:hover {
-  text-decoration: underline;
+button[type="button"]:hover {
+  background-color: #d63030; /* Darker red on hover */
 }

@@ -1,8 +1,23 @@
+<div class="admin-container">
+  <div class="card card-gray-light">
+    <nav class="nav-links">
+      <a [routerLink]="['/management']">
+        <button class="update">Cursos</button>
+      </a>
+      <a [routerLink]="['/alunos']">
+        <button class="update">Alunos</button>
+      </a>
+      <a [routerLink]="['/vendas']">
+        <button class="update">Inscrições</button>
+      </a>
+    </nav>
+  </div>
 
-<div class="form-container">
-  <app-admin></app-admin>
-  <app-video-list></app-video-list>
+  <div class="card card-gray-medium">
+    <app-admin></app-admin>
+  </div>
 
-
+  <div class="card card-gray-dark">
+    <app-video-list></app-video-list>
+  </div>
 </div>
-

@@ -35,6 +35,7 @@ import { MatIconModule } from '@angular/material/icon';
     HeaderComponent,
     FooterComponent,
     LoadingComponent
+
   ]
 })
 export class CoreModule { }

@@ -7,17 +7,7 @@
             <button (click)="busca()">Buscar</button>
         </label>
     </div>
-    <div class="modulos">
-        <a [routerLink]="['/management']">
-            <button class="update">Cursos</button>
-        </a>
-        <a [routerLink]="['/alunos']">
-            <button class="update">Alunos</button>
-        </a>
-        <a [routerLink]="['/vendas']">
-            <button class="update">Inscrições</button>
-        </a>
-    </div>
+    
     <img [routerLink]="['/create']" class="create" src="../../../../assets/images/botao_add.png" alt="" >
     <div class="card" *ngFor="let curso of cursosFiltradas">
         <img [src]="curso.imagem" alt="{{ curso.linguagem }}">

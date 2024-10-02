@@ -2,26 +2,26 @@
 <app-loading *ngIf="carregar"></app-loading>
 <main>
     <div class="pesquisa">
-        <label class="busca">Digite o número da venda:
+        <label class="busca">Digite o número da inscrição:
             <input type="number"  [(ngModel)]="valorBusca" (keyup.enter)="busca()">
             <button (click)="busca()">Buscar</button>
         </label>
     </div>
     <div class="modulos">
-        <a [routerLink]="['/management']">
+        <!-- <a [routerLink]="['/management']">
             <button class="update">Cursos</button>
         </a>
         <a [routerLink]="['/alunos']">
             <button class="update">Alunos</button>
-        </a>
-        <a [routerLink]="['/vendas']">
+        </a> -->
+        <!-- <a [routerLink]="['/vendas']">
             <button class="update">Inscriçoes</button>
-        </a>
+        </a> -->
     </div>
-    <img [routerLink]="['/vendas/create/']" class="create" src="../../../../assets/images/botao_add.png" alt="" >
+
     <div class="card" *ngFor="let venda of vendasFiltradas">
         <div class="infos">
-            <h3>Número da compra: {{ venda.id }}</h3>
+            <h3>Número da Inscrição: {{ venda.id }}</h3>
             <h3>{{ venda.aluno.nome }}</h3>
             <h4>CPF: {{ venda.aluno.cpf }}</h4>
 
