@@ -37,13 +37,29 @@ header h1{
     display: flex;
     color: #030e24;
     width: fit-content;
-    height: 4vw;
+    height: 6.2vw;
     margin-top: 1vw;
     cursor: pointer;
 }
 .rastreio img{
-    border-radius: 10px;
-    margin-right: 1vw;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 1vw;
+}
+.cadAluno{
+  position: absolute;
+  top: 0vw;
+  left: 19vw;
+  display: flex;
+  color: #030e24;
+  width: fit-content;
+  height: 4vw;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+.cadAluno img{
+  border-radius: 10px;
+  margin-right: 1vw;
 }
 .sale{
     width: 100%;
@@ -168,23 +184,8 @@ header {
 
     }
 
-    .rastreio{
-        position: absolute;
-        top: 14vw;
-        left: 2vw;
-        display: flex;
-        color: #3c67f4;
-        width: fit-content;
-        height: 4vw;
-        margin-top: 1vw;
-        font-size: 0vw;
-    }
-    .rastreio img{
-        border-radius: 10px;
-        margin-right: 1vw;
-        width: 10vw;
-        height: auto;
-    }
+
+
     .sale{
         width: 100%;
         height: 6vw;

@@ -56,16 +56,31 @@ header h1{
 }
 .imagem{
     position: absolute;
-    top: 5vw;
+    top: 4vw;
     right: 2vw;
     height: auto;
-    background-color: #fff;
+    display:flex;
+    background-color: #ffffff02;
     cursor:pointer;
+    width:auto;
+    height: 4vw;
+    margin-top: 1vw;
 }
 .imagem img{
-    border-radius: 10px;
+    border-radius: 8px;
     display: block;
-    margin-bottom: 1vw;
+
+}
+.cadAluno{
+  position: absolute;
+  top: 3.5vw;
+  left: 2vw;
+  display: flex;
+  color: #030e24;
+  width: fit-content;
+  height: 4vw;
+  margin-top: 1vw;
+  cursor: pointer;
 }
 
 .rastreio{

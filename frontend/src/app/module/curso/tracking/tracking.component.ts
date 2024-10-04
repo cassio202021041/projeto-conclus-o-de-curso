@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { CursoVenda } from "../../venda/cursovenda";
 import { Venda } from "../../venda/venda";
 import { VendaService } from "../../venda/venda.service";
@@ -18,10 +18,13 @@ export class TrackingComponent implements OnInit{
   id!: number;
   mensagemErro: string = ''; // Mensagem de erro
 
-  constructor(public vendaService: VendaService, private route: ActivatedRoute) { }
+  constructor(public vendaService: VendaService, private route: ActivatedRoute,private router: Router) { }
 
   ngOnInit(): void {
 
+    }
+    voltarParaHome() {
+      this.router.navigate(['/']); // Navega para a home
     }
 
     enviar() {
