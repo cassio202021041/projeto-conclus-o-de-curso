@@ -11,6 +11,7 @@
                     <h3>Valor da doação : R$ {{ venda.valor }}</h3>
                     <h3>Data: {{ venda.dia_venda }}</h3>
                     <h3>Cursos:</h3>
+                    
                 </div>
                 <div class="flex">
                     <div class="card" *ngFor="let curso of venda.cursoVendas">
@@ -19,8 +20,12 @@
                             <h5>R$ {{ curso.valor }}</h5>
                             <h3>Quantidade: {{ curso.quantidade }}</h3>
                     </div>
+
                 </div>
                     <button [routerLink]="['/vendas/edit', venda.id]">Atualizar</button>
+                    <button (click)="voltarParaHome()">Voltar</button>
+
+
             </div>
   </main>
   <app-footer class="footer"></app-footer>

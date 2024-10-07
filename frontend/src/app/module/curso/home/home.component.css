@@ -125,7 +125,7 @@ main{
 .comprar{
     width: 16vw;
     height: 4vw;
-    background: linear-gradient(45deg, #0190f0, #000000, #4c4b4b, #0190f0,  #000000, #ffffff);
+    background: linear-gradient(45deg, #771ba2, #000000, #771ba2,#000000, #771ba2,  #000000, #771ba2);
     font-size: 2vw;
     color: white;
     font-family: 'Lexend', sans-serif;

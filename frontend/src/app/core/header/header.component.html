@@ -10,9 +10,9 @@
     </div>
       </div>
 
-
-    <div class="logo_search">
     <h1 [routerLink]="['']">Cursos</h1>
+    <div class="logo_search">
+
     <div class="search">
         <input type="text" placeholder="Digite o nome do curso..." [(ngModel)]="search" (keyup.enter)="navigateToSearch()">
         <img [routerLink]="['/search/nome', search]" src="../../../assets/images/botao_pesquisa.png" alt="">
