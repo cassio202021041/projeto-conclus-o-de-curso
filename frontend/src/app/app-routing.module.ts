@@ -20,8 +20,8 @@ import { EditVendasComponent } from "./module/venda/edit-vendas/edit-vendas.comp
 import { ManagementVendasComponent } from "./module/venda/management-vendas/management-vendas.component";
 import { VideoHomeComponent } from "./module/video/video-home/video-home.component";
 import { VideoFormComponent } from "./module/video/video-form/video-form.component";
-import { AdminComponent } from "./module/admin/admin/admin.component";
 import { AdminHomeComponent } from "./module/admin/admin-home/admin-home.component";
+import { LoginComponent } from "./component/login/login.component";
 
 
 
@@ -48,11 +48,9 @@ const routes: Routes = [
   { path: 'tracking', component: TrackingComponent},
   { path: 'videos', component: VideoHomeComponent },
   { path: 'editvideo/:id', component: VideoFormComponent },
-  { path: '**', redirectTo: '' },
   { path: 'add', component: VideoFormComponent },
-
-
-
+  { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 

@@ -15,9 +15,8 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-
-
-
+import { ShareModule } from './share/share.module';
+import { ComponentModule } from './component/component/component.module';
 
 
 
@@ -25,6 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
+    
+
   ],
   exports:[
 
@@ -46,7 +47,9 @@ import { MatIconModule } from '@angular/material/icon';
     LoadingBarRouterModule,
     LoadingBarModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    ShareModule,
+    ComponentModule
 
 
 
