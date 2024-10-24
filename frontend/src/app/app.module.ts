@@ -15,8 +15,19 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { ShareModule } from './share/share.module';
-import { ComponentModule } from './component/component/component.module';
+import { PrincipalComponent } from './pages/compartilhado/principal/principal.component';
+import { HomeLoginComponent } from './pages/home-login/home-login.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { HomeComponent } from './pages/compartilhado/principal/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './services/interceptors/token.interceptor';
+
 
 
 
@@ -24,7 +35,12 @@ import { ComponentModule } from './component/component/component.module';
 @NgModule({
   declarations: [
     AppComponent,
+    PrincipalComponent,
+    HomeComponent,
+    LoginComponent,
+    HomeLoginComponent,
     
+
 
   ],
   exports:[
@@ -46,17 +62,21 @@ import { ComponentModule } from './component/component/component.module';
     LoadingBarHttpClientModule,
     LoadingBarRouterModule,
     LoadingBarModule,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    ShareModule,
-    ComponentModule
-
-
+    MatSnackBarModule,
+    ReactiveFormsModule
 
 
 
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
