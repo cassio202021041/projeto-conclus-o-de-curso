@@ -21,7 +21,12 @@ import { ManagementVendasComponent } from "./module/venda/management-vendas/mana
 import { VideoHomeComponent } from "./module/video/video-home/video-home.component";
 import { VideoFormComponent } from "./module/video/video-form/video-form.component";
 import { AdminHomeComponent } from "./module/admin/admin-home/admin-home.component";
-import { LoginComponent } from "./component/login/login.component";
+import { LoginComponent } from "./pages/login/login.component";
+import { HomeLoginComponent } from "./pages/home-login/home-login.component";
+import { PrincipalComponent } from "./pages/compartilhado/principal/principal.component";
+import { UsuarioNaoAutenticadoGuard } from "./services/guards/usuario-nao-autenticado.guard";
+import { UsuarioAutenticadoGuard } from "./services/guards/usuario-autenticado.guard";
+
 
 
 
@@ -49,8 +54,10 @@ const routes: Routes = [
   { path: 'videos', component: VideoHomeComponent },
   { path: 'editvideo/:id', component: VideoFormComponent },
   { path: 'add', component: VideoFormComponent },
-  { path: 'login', component: LoginComponent },
-  { path: '**', redirectTo: '' },
+  { path: 'login', component: LoginComponent}, 
+  { path: 'pc', component: PrincipalComponent},
+  { path: 'hl', component: HomeLoginComponent}
+    
 ];
 
 
