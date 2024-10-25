@@ -7,6 +7,8 @@
     <button class="hover" (click)="mostrarProximaImagem()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
   </div>
   <button [routerLink]="['/login']" class="colecao titulo comprar hover">Área do Aluno</button>
+  <button [routerLink]="['/login']" class="colecao titulo comprar hover">Administrador</button>
+
   <div class="faixa_vermelha">
     <div class="margem">
       <button class="hover" [disabled]="!passadorEsquerda"  (click)="removeContadorIdiomas()"><img class="left" src="../../../../assets/images/botao_proximo.png" alt=""></button>
@@ -38,6 +40,3 @@
   </main>
 <app-loading *ngIf="carregar"></app-loading>
 <app-footer></app-footer>
-<div class="">
-  <button [routerLink]="['/login']" class="colecao titulo comprar hover">Configuração</button>
-</div>
