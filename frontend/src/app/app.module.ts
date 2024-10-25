@@ -27,6 +27,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './services/interceptors/token.interceptor';
+import { SafeUrlPipe } from './safe-url.pipe';
 
 
 
@@ -39,7 +40,9 @@ import { TokenInterceptor } from './services/interceptors/token.interceptor';
     HomeComponent,
     LoginComponent,
     HomeLoginComponent,
-    
+    SafeUrlPipe,
+
+
 
 
   ],
