@@ -24,8 +24,6 @@ import { AdminHomeComponent } from "./module/admin/admin-home/admin-home.compone
 import { LoginComponent } from "./pages/login/login.component";
 import { HomeLoginComponent } from "./pages/home-login/home-login.component";
 import { PrincipalComponent } from "./pages/compartilhado/principal/principal.component";
-import { UsuarioNaoAutenticadoGuard } from "./services/guards/usuario-nao-autenticado.guard";
-import { UsuarioAutenticadoGuard } from "./services/guards/usuario-autenticado.guard";
 
 
 

@@ -75,14 +75,17 @@ export class HomeComponent implements OnInit {
 
     this.cursoService.getCursos().subscribe({
       next: (data: Curso[]) => {
+        console.log('Dados recebidos:', data); // Adicione isso para verificar os dados
         this.cursos = data;
         this.cursosFiltradas = this.cursos;
-      this.carregar = false;
-    },
-    error: (error: any) => {
-      console.error('Ocorreu um erro ao buscar as cursos:', error);
-      this.carregar = false; }
+        this.carregar = false;
+      },
+      error: (error: any) => {
+        console.error('Ocorreu um erro ao buscar os cursos:', error);
+        this.carregar = false;
+      }
     });
+
   }
 
     mostrarProximaImagem() {
@@ -155,6 +158,7 @@ export class HomeComponent implements OnInit {
           this.cursosFiltradas = this.cursos;
       }
     }
+
 
 
 }

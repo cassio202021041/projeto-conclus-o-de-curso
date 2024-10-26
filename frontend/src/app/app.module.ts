@@ -3,7 +3,8 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { CoreModule } from "./core/core.module";import { CursoModule } from "./module/curso/curso.module";
+import { CoreModule } from "./core/core.module";
+import { CursoModule } from "./module/curso/curso.module";
 import { VendaModule } from "./module/venda/venda.module";
 import { AlunoModule } from "./module/aluno/aluno.module";
 import { VideoModule } from "./module/video/video.module";
@@ -18,17 +19,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { PrincipalComponent } from './pages/compartilhado/principal/principal.component';
 import { HomeLoginComponent } from './pages/home-login/home-login.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { HomeComponent } from './pages/compartilhado/principal/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { TokenInterceptor } from './services/interceptors/token.interceptor';
-import { SafeUrlPipe } from './safe-url.pipe';
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './module/curso/home/home.component';
 
 
 
@@ -37,10 +35,10 @@ import { SafeUrlPipe } from './safe-url.pipe';
   declarations: [
     AppComponent,
     PrincipalComponent,
-    HomeComponent,
     LoginComponent,
     HomeLoginComponent,
-    SafeUrlPipe,
+    HomeComponent
+  
 
 
 
@@ -53,9 +51,7 @@ import { SafeUrlPipe } from './safe-url.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CursoModule,
     AlunoModule,
-    CoreModule,
     VendaModule,
     VideoModule,
     FormsModule,
@@ -72,14 +68,17 @@ import { SafeUrlPipe } from './safe-url.pipe';
     MatToolbarModule,
     MatIconModule,
     MatSnackBarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NoopAnimationsModule,
+    CoreModule,
+    CursoModule
+
 
 
 
   ],
-  providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }
-  ],
+  
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
