@@ -20,7 +20,7 @@ import { CoreModule } from "../../core/core.module";
 
 @NgModule({
   declarations: [
-    HomeComponent,
+   
     DetailsComponent,
     ManagementComponent,
     CreateComponent,
@@ -28,7 +28,7 @@ import { CoreModule } from "../../core/core.module";
     SearchComponent,
     ShoppingCartComponent,
     BuyComponent,
-    TrackingComponent,
+    TrackingComponent
   
   ],
   imports: [

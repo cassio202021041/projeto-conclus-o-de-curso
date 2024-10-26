@@ -32,16 +32,23 @@ export class TrackingComponent implements OnInit{
 
       this.vendaService.find(this.id).subscribe({
         next: (data: Venda) => {
-          if (data && data.cursoVendas && data.cursoVendas.length > 0) {
-            this.venda = data;
-            this.cursos = this.venda.cursoVendas;
-            this.mensagemErro = ''; // Limpar mensagem de erro
-          } else {
-            this.venda = null;
-            this.cursos = [];
-            this.mensagemErro = 'Aluno inscrito'; // Mensagem de erro
+          try {
+            // Verifique se a data e os cursos estão corretos
+            if (data && data.cursoVendas && data.cursoVendas.length > 0) {
+              this.venda = data;
+              this.cursos = this.venda.cursoVendas;
+              this.mensagemErro = ''; // Limpar mensagem de erro
+            } else {
+              this.venda = null;
+              this.cursos = [];
+              this.mensagemErro = 'Aluno inscrito'; // Mensagem de erro
+            }
+          } catch (error) {
+            console.error('Erro ao processar os dados:', error);
+            this.mensagemErro = 'Erro ao processar os dados. Tente novamente.';
+          } finally {
+            this.carregar = false; // Finalizar o carregamento
           }
-          this.carregar = false; // Finalizar o carregamento
         },
         error: (err) => {
           console.error('Erro ao buscar curso:', err);
@@ -52,4 +59,5 @@ export class TrackingComponent implements OnInit{
         }
       });
     }
+
   }
