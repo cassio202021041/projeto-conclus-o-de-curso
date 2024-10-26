@@ -1,0 +1,305 @@
+[33mcommit bb4b5f9cabb76f2925eb82fb292b52fd5ab8a2a8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 995d51c cdc71bd
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:54:38 2024 -0300
+
+    Merge pull request #12 from cassio202021041/UPDATE-CORRECAO-DETALHE-04
+    
+    UPDATE-CORRECAO-DETALHE-04
+
+[33mcommit cdc71bddcd0120cb2a64e448393336531eb2a2b4[m
+Merge: ddd9ea0 995d51c
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:54:28 2024 -0300
+
+    Merge branch 'main' into UPDATE-CORRECAO-DETALHE-04
+
+[33mcommit ddd9ea0053f80261ba5ed3a08b7ffb95db4b4a94[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Sat Oct 26 15:47:42 2024 -0300
+
+    UPDATE-CORRECAO-DETALHE-04
+
+[33mcommit 995d51c6873e25d6ac88705a76f4f35b8f21ad36[m
+Merge: 909601b b5b22b9
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:43:39 2024 -0300
+
+    Merge pull request #11 from cassio202021041/revert-10-revert-9-revert-8-UPDATE-CORRECAO-DETALHE-01
+    
+    Revert "Revert "Revert "Merge branch 'UPDATE-CORRECAO-DETALHE-01' of https://github.com/cassi…"""
+
+[33mcommit b5b22b955effc36b898e7f4072919af30d09c9e6[m[33m ([m[1;31morigin/revert-10-revert-9-revert-8-UPDATE-CORRECAO-DETALHE-01[m[33m)[m
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:43:25 2024 -0300
+
+    Revert "Revert "Revert "Merge branch 'UPDATE-CORRECAO-DETALHE-01' of https://github.com/cassi…"""
+
+[33mcommit 909601bd5113f81d2ee4fe0db12cab6ef80b3909[m
+Merge: 67f7ccc 30c97cc
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:43:14 2024 -0300
+
+    Merge pull request #10 from cassio202021041/revert-9-revert-8-UPDATE-CORRECAO-DETALHE-01
+    
+    Revert "Revert "Merge branch 'UPDATE-CORRECAO-DETALHE-01' of https://github.com/cassi…""
+
+[33mcommit 30c97cc113674e4f3800f5ff67866a60825ed200[m[33m ([m[1;31morigin/revert-9-revert-8-UPDATE-CORRECAO-DETALHE-01[m[33m)[m
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:43:01 2024 -0300
+
+    Revert "Revert "Merge branch 'UPDATE-CORRECAO-DETALHE-01' of https://github.com/cassi…""
+
+[33mcommit 67f7ccc34c6add3069c1fbb26d36c008feac9a9a[m
+Merge: adebc7b a7fbe65
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:42:46 2024 -0300
+
+    Merge pull request #9 from cassio202021041/revert-8-UPDATE-CORRECAO-DETALHE-01
+    
+    Revert "Merge branch 'UPDATE-CORRECAO-DETALHE-01' of https://github.com/cassi…"
+
+[33mcommit a7fbe6596f839056b6b21a2ee7003891190f216e[m[33m ([m[1;31morigin/revert-8-UPDATE-CORRECAO-DETALHE-01[m[33m)[m
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:42:32 2024 -0300
+
+    Revert "Merge branch 'UPDATE-CORRECAO-DETALHE-01' of https://github.com/cassi…"
+
+[33mcommit adebc7ba1c177687cbfe0647fe1ba96bff9822e8[m
+Merge: 3431448 62ce02c
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:40:25 2024 -0300
+
+    Merge pull request #8 from cassio202021041/UPDATE-CORRECAO-DETALHE-01
+    
+    Merge branch 'UPDATE-CORRECAO-DETALHE-01' of https://github.com/cassi…
+
+[33mcommit 62ce02c7f4ee91ee3458b93e4b6c0f34309f5ef8[m[33m ([m[1;31morigin/UPDATE-CORRECAO-DETALHE-01[m[33m, [m[1;32mUPDATE-CORRECAO-DETALHE-01[m[33m)[m
+Merge: 5ce6c58 cf22448
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Sat Oct 26 15:38:48 2024 -0300
+
+    Merge branch 'UPDATE-CORRECAO-DETALHE-01' of https://github.com/cassio202021041/projeto-conclus-o-de-curso into UPDATE-CORRECAO-DETALHE-01
+
+[33mcommit 34314480ece3340f809dda14b7ae5be41bdb899f[m
+Merge: 5ce6c58 cf22448
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:36:36 2024 -0300
+
+    Merge pull request #7 from cassio202021041/UPDATE-CORRECAO-DETALHE-01
+    
+    Revert "UPDATE-CORRECAO-DETALHE-02"
+
+[33mcommit cf224483d48f9a2aecd6c108b884f9b0031a69b0[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Sat Oct 26 15:34:34 2024 -0300
+
+    Revert "UPDATE-CORRECAO-DETALHE-02"
+    
+    This reverts commit 26ee7fd1636a3afbfc2bf27ae5afcd0d7efaad5a.
+
+[33mcommit 5ce6c588fc82e138ba089a22aa842c396192970a[m
+Merge: 621b37f cf87834
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:24:04 2024 -0300
+
+    Merge pull request #6 from cassio202021041/revert-5-UPDATE-CORRECAO-DETALHE-01
+    
+    Revert "UPDATE-CORRECAO-DETALHE-02"
+
+[33mcommit cf878344c622d39a3aede651c988dc9afc42e55c[m[33m ([m[1;31morigin/revert-5-UPDATE-CORRECAO-DETALHE-01[m[33m, [m[1;32mrevert-5-UPDATE-CORRECAO-DETALHE-01[m[33m)[m
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:23:38 2024 -0300
+
+    Revert "UPDATE-CORRECAO-DETALHE-02"
+
+[33mcommit 621b37fc9b882fa4d7e46ab4461eeb798e01652b[m
+Merge: 4cd7359 26ee7fd
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:20:24 2024 -0300
+
+    Merge pull request #5 from cassio202021041/UPDATE-CORRECAO-DETALHE-01
+    
+    UPDATE-CORRECAO-DETALHE-02
+
+[33mcommit 26ee7fd1636a3afbfc2bf27ae5afcd0d7efaad5a[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Sat Oct 26 15:18:29 2024 -0300
+
+    UPDATE-CORRECAO-DETALHE-02
+
+[33mcommit 4cd735952a86d0cf1f8661f5edcdd5b18dd58cb4[m
+Merge: b7bb02c fb69bb7
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sat Oct 26 15:10:28 2024 -0300
+
+    Merge pull request #4 from cassio202021041/UPDATE-CORRECAO-DETALHE-01
+    
+    UPDATE-VERSAO-CORECAO-ERRO-COMPRAR
+
+[33mcommit fb69bb738c560e40eb0bd044c4895c00b86689d6[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Sat Oct 26 14:42:27 2024 -0300
+
+    UPDATE-VERSAO-CORECAO-ERRO-COMPRAR
+
+[33mcommit b7bb02c8565bbdb53df91e633aec2a46132bedd7[m
+Merge: ab07152 6584f3f
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Fri Oct 25 00:18:13 2024 -0300
+
+    Merge pull request #3 from cassio202021041/MELHORIAS-02
+    
+    MELHORIAS-02
+
+[33mcommit 6584f3f9342699861069dd7e577e1de0821bf000[m[33m ([m[1;31morigin/MELHORIAS-02[m[33m, [m[1;32mMELHORIAS-02[m[33m)[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Fri Oct 25 00:17:32 2024 -0300
+
+    MELHORIAS-02
+
+[33mcommit ab07152bf8cf3ba191eebc9d6681ed8b87bce747[m
+Merge: 0c516a4 2a61b25
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Fri Oct 25 00:03:17 2024 -0300
+
+    Merge pull request #2 from cassio202021041/MELHORIAS-02
+    
+    MELHORIAS-02
+
+[33mcommit 2a61b25efbc09e82741c07f4d5f5c352101d16b2[m[33m ([m[1;31morigin/TELALOGIN-01[m[33m, [m[1;32mTELALOGIN-01[m[33m)[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Thu Oct 24 21:35:56 2024 -0300
+
+    MELHORIAS-01
+
+[33mcommit 0c516a44c0cba02465df55b0d1fa76026ffd54f3[m
+Merge: feba84d 08e0026
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Wed Oct 23 23:24:06 2024 -0300
+
+    Merge pull request #1 from cassio202021041/TELALOGIN-01
+    
+    TELALOGIN-01
+
+[33mcommit 08e0026d693de8f3ee7cf873665bb9871eaa14ce[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Wed Oct 23 23:02:06 2024 -0300
+
+    TELALOGIN-01
+
+[33mcommit feba84d41fb06927096d86ee27b8cbafe69fbc8a[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Thu Oct 10 00:37:04 2024 -0300
+
+    Login front 01
+
+[33mcommit 4a17b1ef15679cb19ca20604dcf80e516aba659c[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Sun Oct 6 23:13:28 2024 -0300
+
+    CSS-1 AJUSTE
+    
+    Ajuste css adicionado opção cadastro de email e senha
+
+[33mcommit 9127a0dfb2beb367f12fb910d647a3a3989af99e[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Thu Oct 3 22:35:32 2024 -0300
+
+    CURSO-1
+
+[33mcommit 64c89fae9e725363b9e18b3e30b951df3a9fab99[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Tue Oct 1 21:17:39 2024 -0300
+
+    ATUALIZACAO DEMANDAS AJUSTE TCC
+
+[33mcommit 420fc0797f16de336e54e1ba76186e5798c25575[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Fri Sep 20 00:00:15 2024 -0300
+
+    commit grande
+    
+    Commit back atrasado gigante
+
+[33mcommit 6265928c17c19513eebcc18559da96822ee68d91[m[33m ([m[1;32mCURSOGRATUITO01--Commit-back-completo[m[33m)[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Thu Aug 29 00:04:20 2024 -0300
+
+    commit 2908
+    
+    commit 2908
+
+[33mcommit cb6d966aec3fac97088fc8c8a38b40f2029544a9[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Mon Aug 26 09:20:17 2024 -0300
+
+    Commit alteração
+    
+    Atualização 26/08
+
+[33mcommit c33205e64f3b4d6df9e975f983b4ee4e0c8dd6ff[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Thu Aug 8 23:48:48 2024 -0300
+
+    commit figuras
+    
+    commit figuras
+
+[33mcommit ffdf0708cdfccef4b96da8ac6e518d6fb3ea3950[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Mon Jul 8 16:06:12 2024 -0300
+
+    commit correção de bugs
+
+[33mcommit be58687d34b78373a0511ad752126bf227c3eba8[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Tue Jun 25 23:07:36 2024 -0300
+
+    Update home.component.html
+
+[33mcommit 216468ab86676f9f38377b00e412fdbe43b253ea[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Tue Jun 25 23:04:20 2024 -0300
+
+    Commit Css e Imagens
+
+[33mcommit e1971b0bf2ab0a70eb248f8bfcedc82c6ccccc14[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Tue Jun 25 21:47:56 2024 -0300
+
+    commit correção
+
+[33mcommit f5444e93bf9b01499d58146db0589f9ed29e7ec6[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Tue Jun 25 16:58:01 2024 -0300
+
+    Commit Modulos
+
+[33mcommit d112f9af5fb171a406476cdba5f97979b3de56a3[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Tue Jun 25 14:21:10 2024 -0300
+
+    Commit Criando modulos
+    
+    Criando módulos cliente, curso, venda e alguns componentes
+
+[33mcommit 8459f4ac1c4382dabc4001af729d101e5b41486d[m
+Author: cassio202021041 <cassio00710@hotmail.com>
+Date:   Sun Jun 16 18:36:18 2024 -0300
+
+    Commit Criação Projeto
+    
+     ng new angularGestaoCursos --no-standalone
+
+[33mcommit ec41745098de443d6d9759bad76b8f4a8d6706da[m
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sun Jun 16 16:34:00 2024 -0300
+
+    Update README.md
+
+[33mcommit 231e8e9e7ad78ae1836b302d45dce77a3482add0[m
+Author: cassio_ti <93845745+cassio202021041@users.noreply.github.com>
+Date:   Sun Jun 16 16:33:29 2024 -0300
+
+    Initial commit

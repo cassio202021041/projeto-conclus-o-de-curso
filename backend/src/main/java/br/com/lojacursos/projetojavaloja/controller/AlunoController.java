@@ -1,7 +1,7 @@
 package br.com.lojacursos.projetojavaloja.controller;
 
-import java.util.List;
 
+import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -28,44 +28,38 @@ import lombok.RequiredArgsConstructor;
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/alunos")
 public class AlunoController {
-
     private final AlunoService alunoService;
-
-    // Endpoint para listar todos os alunos
+    
     @GetMapping
-    public ResponseEntity<List<Aluno>> list() {
+    public ResponseEntity<List<Aluno>> list(){
         return ResponseEntity.ok(alunoService.listAll());
     }
 
-    // Endpoint para buscar aluno por ID
     @GetMapping(path = "/{id}")
-    public ResponseEntity<Aluno> findById(@PathVariable long id) {
+    public ResponseEntity<Aluno> findById(@PathVariable long id){
         return ResponseEntity.ok(alunoService.findByIdOrThrowBadRequestException(id));
     }
-
-    // Endpoint para buscar aluno por CPF
+    
     @GetMapping(path = "/find")
-    public ResponseEntity<Aluno> findByCpf(@RequestParam(name="cpf") String cpf) {
+    public ResponseEntity<Aluno> findByCpf(@RequestParam(name="cpf") String cpf){
         return ResponseEntity.ok(alunoService.findByCpf(cpf));
     }
-
-    // Endpoint para criar um novo aluno
+    
     @PostMapping
-    public ResponseEntity<Aluno> save(@RequestBody AlunoPostRequestBody alunoPostRequestBody) {
+    public ResponseEntity<Aluno> save(@RequestBody AlunoPostRequestBody alunoPostRequestBody){
         return new ResponseEntity<>(alunoService.save(alunoPostRequestBody), HttpStatus.CREATED);
     }
-
-    // Endpoint para deletar um aluno
+    
     @DeleteMapping(path = "/{id}")
-    public ResponseEntity<Void> delete(@PathVariable long id) {
-        alunoService.delete(id);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    public ResponseEntity<Void> delete(@PathVariable long id){
+		alunoService.delete(id);
+    	return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
-    // Endpoint para atualizar um aluno existente
+    
     @PutMapping
-    public ResponseEntity<Void> replace(@RequestBody AlunoPutRequestBody alunoPutRequestBody) {
-        alunoService.replace(alunoPutRequestBody);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    public ResponseEntity<Void> replace(@RequestBody AlunoPutRequestBody alunoPutRequestBody){
+    	alunoService.replace(alunoPutRequestBody);
+    	return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+    
 }

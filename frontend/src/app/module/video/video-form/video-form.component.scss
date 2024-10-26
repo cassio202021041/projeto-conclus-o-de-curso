@@ -27,12 +27,12 @@ input {
 }
 
 input:focus {
-  border-color: #771ba2; /* Change border color on focus */
+  border-color: #1e0fa8; /* Change border color on focus */
   outline: none; /* Remove default outline */
 }
 
 button {
-  background-color: #771ba2; /* Button background color */
+  background-color: #1e0fa8; /* Button background color */
   color: white; /* Button text color */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-  background-color: #771ba2; /* Darker color on hover */
+  background-color: #1c1b8a; /* Darker color on hover */
 }
 
 button[type="button"] {

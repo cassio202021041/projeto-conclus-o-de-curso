@@ -25,8 +25,5 @@ export class DetailsVendaComponent implements OnInit{
     this.carregar = false;
     })
     }
-     voltarParaHome() {
-    this.router.navigate(['/']);
-  }
 
 }
