@@ -1,6 +1,7 @@
 {
   "name": "angular-gestao-cursos",
   "version": "0.0.0",
+  "description": "Um projeto Angular para gestão de cursos",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,18 +12,19 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.12",
-    "@angular/cdk": "~17.3.3",
+    "@angular/cdk": "^17.3.10",
     "@angular/common": "^17.3.0",
     "@angular/compiler": "^17.3.0",
     "@angular/core": "^17.3.0",
     "@angular/forms": "^17.3.0",
-    "@angular/material": "^18.2.9",
+    "@angular/material": "^17.3.10",
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
-    "@ngx-loading-bar/core": "^6.0.2",
+    "@ngx-loading-bar/core": "^7.0.0",
     "@ngx-loading-bar/http-client": "^6.0.2",
     "@ngx-loading-bar/router": "^6.0.2",
+    "bootstrap": "5.3.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
