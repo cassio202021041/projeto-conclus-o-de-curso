@@ -5,7 +5,7 @@ import { CursoVenda } from "./cursovenda";
 export interface Venda {
     id: number;
     dia_venda:string;
-    valor:string;
+    valor:number;
     aluno:Aluno;
     cursoVendas: CursoVenda[];
 }
