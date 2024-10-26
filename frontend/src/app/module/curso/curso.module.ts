@@ -28,7 +28,8 @@ import { CoreModule } from "../../core/core.module";
     SearchComponent,
     ShoppingCartComponent,
     BuyComponent,
-    TrackingComponent
+    TrackingComponent,
+  
   ],
   imports: [
     CommonModule,

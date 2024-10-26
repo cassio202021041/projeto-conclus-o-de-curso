@@ -15,8 +15,19 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-
-
+import { PrincipalComponent } from './pages/compartilhado/principal/principal.component';
+import { HomeLoginComponent } from './pages/home-login/home-login.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { HomeComponent } from './pages/compartilhado/principal/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './services/interceptors/token.interceptor';
+import { SafeUrlPipe } from './safe-url.pipe';
 
 
 
@@ -25,6 +36,15 @@ import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
+    PrincipalComponent,
+    HomeComponent,
+    LoginComponent,
+    HomeLoginComponent,
+    SafeUrlPipe,
+
+
+
+
   ],
   exports:[
 
@@ -45,15 +65,21 @@ import { MatIconModule } from '@angular/material/icon';
     LoadingBarHttpClientModule,
     LoadingBarRouterModule,
     LoadingBarModule,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
-
-
+    MatIconModule,
+    MatSnackBarModule,
+    ReactiveFormsModule
 
 
 
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -20,8 +20,13 @@ import { EditVendasComponent } from "./module/venda/edit-vendas/edit-vendas.comp
 import { ManagementVendasComponent } from "./module/venda/management-vendas/management-vendas.component";
 import { VideoHomeComponent } from "./module/video/video-home/video-home.component";
 import { VideoFormComponent } from "./module/video/video-form/video-form.component";
-import { AdminComponent } from "./module/admin/admin/admin.component";
 import { AdminHomeComponent } from "./module/admin/admin-home/admin-home.component";
+import { LoginComponent } from "./pages/login/login.component";
+import { HomeLoginComponent } from "./pages/home-login/home-login.component";
+import { PrincipalComponent } from "./pages/compartilhado/principal/principal.component";
+import { UsuarioNaoAutenticadoGuard } from "./services/guards/usuario-nao-autenticado.guard";
+import { UsuarioAutenticadoGuard } from "./services/guards/usuario-autenticado.guard";
+
 
 
 
@@ -48,11 +53,11 @@ const routes: Routes = [
   { path: 'tracking', component: TrackingComponent},
   { path: 'videos', component: VideoHomeComponent },
   { path: 'editvideo/:id', component: VideoFormComponent },
-  { path: '**', redirectTo: '' },
   { path: 'add', component: VideoFormComponent },
-
-
-
+  { path: 'login', component: LoginComponent}, 
+  { path: 'pc', component: PrincipalComponent},
+  { path: 'hl', component: HomeLoginComponent}
+    
 ];
 
 
