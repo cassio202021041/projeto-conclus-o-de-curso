@@ -48,8 +48,8 @@ header h1{
 }
 .cadAluno{
   position: absolute;
-  top: 0vw;
-  left: 19vw;
+  top: 4.5vw;
+  left: 80vw;
   display: flex;
   color: #030e24;
   width: fit-content;

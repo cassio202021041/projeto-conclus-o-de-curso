@@ -120,14 +120,14 @@ main{
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(150, 4, 150, 0.541);
 }
 .comprar{
     width: 16vw;
     height: 4vw;
     background: linear-gradient(45deg, #771ba2, #000000, #771ba2,#000000, #771ba2,  #000000, #771ba2);
-    font-size: 2vw;
-    color: white;
+    font-size: 2.2vw;
+    color: rgb(255, 190, 190);
     font-family: 'Lexend', sans-serif;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -198,7 +198,7 @@ main{
       margin-left: 5vw;
       margin-bottom:5vw;
       font-size: 1vw;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 10px rgba(163, 0, 0, 0.5);
     }
 
     .card img {

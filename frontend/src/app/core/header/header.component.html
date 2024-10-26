@@ -1,23 +1,26 @@
 <header>
   <div class="rastreio" [routerLink]="['/tracking']">
-    <img src="../../../assets/images/rastreio.png" alt="rastreio">
     <h3>Consultar Inscrição</h3>
+  </div>
 
-    <div class="cadAluno" [routerLink]="['alunos/create']">
-      <img src="../../../assets/images/cadAluno.png" alt="cadAluno">
-      <h3>Cadastrar aluno</h3>
+  <div class="cadAluno" [routerLink]="['alunos/create']">
+    <h3>Cadastrar Aluno</h3>
+  </div>
 
-    </div>
-      </div>
-
-    <h1 [routerLink]="['']">Cursos</h1>
-    <div class="logo_search">
-
+  <h1 [routerLink]="['']">Cursos</h1>
+  <div class="logo_search">
     <div class="search">
-        <input type="text" placeholder="Digite o nome do curso..." [(ngModel)]="search" (keyup.enter)="navigateToSearch()">
-        <img [routerLink]="['/search/nome', search]" src="../../../assets/images/botao_pesquisa.png" alt="">
+      <input
+        type="text"
+        placeholder="Digite o nome do curso..."
+        [(ngModel)]="search"
+        (keyup.enter)="navigateToSearch()"
+      />
+      <img
+        [routerLink]="['/search/nome', search]"
+        src="../../../assets/images/botao_pesquisa.png"
+        alt=""
+      />
     </div>
-    </div>
-
+  </div>
 </header>
-
