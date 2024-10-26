@@ -1,8 +1,5 @@
 export interface Curso {
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 4a17b1e (CSS-1 AJUSTE)
+curso: any;
     id : number;
     linguagem: string;
     idioma: string;

@@ -125,12 +125,7 @@ main{
 .comprar{
     width: 16vw;
     height: 4vw;
-<<<<<<< HEAD
     background: linear-gradient(45deg, #771ba2, #000000, #771ba2,#000000, #771ba2,  #000000, #771ba2);
-    font-size: 2.2vw;
-    color: rgb(255, 190, 190);
-=======
-    background: linear-gradient(45deg, #0190f0, #000000, #4c4b4b, #0190f0,  #000000, #ffffff);
     font-size: 2vw;
     color: white;
 >>>>>>> parent of 4a17b1e (CSS-1 AJUSTE)
