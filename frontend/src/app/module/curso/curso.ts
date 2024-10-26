@@ -6,5 +6,4 @@ export interface Curso {
   quantidade: number;
   valor: number;
   imagem: string;
-
 }
