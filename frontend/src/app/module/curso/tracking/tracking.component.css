@@ -6,9 +6,16 @@
     width: 30vw;
     margin-bottom: 2vw;
     border-radius: 10px;
-    border-color: #1ba25a;
+    border-color: #46035a;
 
 }
+.h3_titulo {
+  font-weight: bold; /* Negrito */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 0.5rem; /* Distância do topo */
+  margin-bottom: 0.5rem; /* Distância do fundo */
+}
+
 .pedido{
     margin-left: 25vw;
     width: fit-content;
@@ -18,11 +25,11 @@
     margin-left: 4vw;
     font-size: 3vw;
 }
-label h3{
+label_h3{
     margin-left: 7vw;
 }
 input{
-    margin-left: 10.5vw;
+    margin-left: 11vw;
     border-radius: 5px;
     height: 2vw;
     font-size: 1.5vw;
@@ -37,9 +44,9 @@ button{
     height: 3vw;
     width: 8vw;
     font-size: 1.5vw;
-    background-color: #1ba25a;
+    background-color: #5b219e;
     border-radius: 5px;
-    border-color: none;
+    border-color: #ddd8e2;
     margin-left: 10.8vw;
     margin-top: 1vw;
     margin-bottom: 2vw;

@@ -16,39 +16,37 @@ export class TrackingComponent implements OnInit{
   cursos! :CursoVenda[];
   carregar: boolean = true;
   id!: number;
-  mensagemErro: string = ''; // Mensagem de erro
-
+  mensagemErro: string = '';
   constructor(public vendaService: VendaService, private route: ActivatedRoute,private router: Router) { }
 
   ngOnInit(): void {
 
     }
     voltarParaHome() {
-      this.router.navigate(['/']); // Navega para a home
+      this.router.navigate(['/']);
     }
 
     enviar() {
-      this.carregar = true; // Iniciar o carregamento
-
+      this.carregar = true;
       this.vendaService.find(this.id).subscribe({
         next: (data: Venda) => {
           if (data && data.cursoVendas && data.cursoVendas.length > 0) {
             this.venda = data;
             this.cursos = this.venda.cursoVendas;
-            this.mensagemErro = ''; // Limpar mensagem de erro
+            this.mensagemErro = '';
           } else {
             this.venda = null;
             this.cursos = [];
-            this.mensagemErro = 'Aluno inscrito'; // Mensagem de erro
+            this.mensagemErro = 'Aluno inscrito';
           }
-          this.carregar = false; // Finalizar o carregamento
+          this.carregar = false;
         },
         error: (err) => {
           console.error('Erro ao buscar curso:', err);
           this.venda = null;
           this.cursos = [];
           this.mensagemErro = 'Aluno não encontrado. Tente novamente mais tarde.';
-          this.carregar = false; // Finalizar o carregamento
+          this.carregar = false;
         }
       });
     }

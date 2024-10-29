@@ -19,9 +19,41 @@ export class DetailsComponent implements OnInit {
 
 
   constructor(private route: ActivatedRoute, private router: Router, public cursoService: CursoService) {
-
-  }  ngOnInit():void{
+    this.cursoVenda = {
+      id: 0,
+      curso: {
+        id:0,
+        linguagem: "",
+        idioma: "",
+        imagem: "",
+        ano:0,
+        quantidade:0,
+        valor:0
+      },
+      vendaId: 0,
+      quantidade: 0,
+      valor: 0,
+    };
   }
+  ngOnInit(): void {
+    this.id = this.route.snapshot.params['id'];
+
+    if (this.id !== null) {
+      console.log(this.id);
+      this.cursoService.find(this.id).subscribe({
+        next: (data: Curso) => {
+          this.curso = data;
+        this.carregar = false;
+      },
+      error: (error: any) => {
+        console.error('Ocorreu um erro ao buscar a curso:', error);
+        this.carregar = false; }
+      });
+    }
+    else{
+      this.router.navigateByUrl('');
+    }
+  } 
   addCursoCarrinho() {
     this.cursoVenda.curso = this.curso;
     this.cursoVenda.quantidade = this.quantidade;

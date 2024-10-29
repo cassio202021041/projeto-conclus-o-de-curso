@@ -31,8 +31,8 @@ main{
     }
     .card img{
         display: block;
-        width: 35vw;
-        height: 35vw;
+        width: 25vw;
+        height: 25vw;
     }
     .card h3{
         font-size: 2vw;

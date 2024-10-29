@@ -37,8 +37,9 @@ import { HomeComponent } from './module/curso/home/home.component';
     PrincipalComponent,
     LoginComponent,
     HomeLoginComponent,
-    HomeComponent
-  
+    HomeComponent,
+    
+
 
 
 
@@ -77,8 +78,8 @@ import { HomeComponent } from './module/curso/home/home.component';
 
 
   ],
-  
-  
+
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

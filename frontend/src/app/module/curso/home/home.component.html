@@ -6,8 +6,8 @@
     <img class="home_picture" [src]="imagens[imagemAtualIndex]" alt="Imagem">
     <button class="hover" (click)="mostrarProximaImagem()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
   </div>
-  <button [routerLink]="['/login']" class="colecao titulo comprar hover">Área do Aluno</button>
-  <button [routerLink]="['/login']" class="colecao titulo comprar hover">Administrador</button>
+  <button [routerLink]="['/login']" class="colecao titulo comprar hover">. Área do Aluno</button>
+  <button [routerLink]="['/login_admin']" class="colecao titulo comprar hover">. Administrador</button>
 
   <div class="faixa_vermelha">
     <div class="margem">
@@ -23,6 +23,12 @@
       <button class="hover" [disabled]="!passadorDireita" (click)="addContadorIdiomas()"><img class="right" src="../../../../assets/images/botao_proximo.png" alt=""></button>
     </div>
   </div>
+  <div [routerLink]="['/details', curso.id]" class="card hover" *ngFor="let curso of cursosFiltradas">
+    <img  [src]="curso.imagem" alt="{{ curso.linguagem }}">
+    <h3>{{ curso.linguagem }}</h3>
+    <h4>{{ curso.ano }}</h4>
+    <h5>R$ {{ curso.valor }}</h5>
+  </div>
   <div class="filtro">
     <label for="opcoes">Filtro:</label>
     <select id="opcoes" [(ngModel)]="opcaoSelecionada" name="opcaoSelecionada" (change)="selecaoAlterada()">
@@ -30,12 +36,6 @@
       <option value="Home">Linkedin</option>
        </select>
   </div>
-    <div [routerLink]="['/details', curso.id]" class="card hover" *ngFor="let curso of cursosFiltradas">
-      <img  [src]="curso.imagem" alt="{{ curso.linguagem }}">
-      <h3>{{ curso.linguagem }}</h3>
-      <h4>{{ curso.ano }}</h4>
-      <h5>R$ {{ curso.valor }}</h5>
-    </div>
 
   </main>
 <app-loading *ngIf="carregar"></app-loading>
