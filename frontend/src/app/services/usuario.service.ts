@@ -3,9 +3,7 @@ import { IUsuario } from '../interfaces/IUsuario';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable, of, tap } from 'rxjs';
-import { environment } from '../../environments/environment';
 
-const apiUrlUsuario = environment.apiUrl + "Usuario";
 
 @Injectable({
   providedIn: 'root'
@@ -60,7 +58,7 @@ export class UsuarioService {
     const token = localStorage.getItem('token');
     return token ? JSON.parse(atob(token)) : null;
   }
-  
+
   get logado(): boolean {
     return !!localStorage.getItem('token');
   }
