@@ -27,6 +27,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './module/curso/home/home.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HeaderComponent} from './module/video/template/header/header1.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'
 
 
 
@@ -38,9 +41,6 @@ import { HomeComponent } from './module/curso/home/home.component';
     LoginComponent,
     HomeLoginComponent,
     HomeComponent,
-
-
-
 
 
 
@@ -73,13 +73,21 @@ import { HomeComponent } from './module/curso/home/home.component';
     NoopAnimationsModule,
     CoreModule,
     CursoModule
-
-
-
-
   ],
 
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 
-  bootstrap: [AppComponent]
+
+
+  bootstrap: [AppComponent],
+
+
+
+  providers: [
+          provideAnimationsAsync()
+
+
+
+  ]
 })
 export class AppModule { }

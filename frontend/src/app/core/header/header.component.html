@@ -1,3 +1,4 @@
+
 <header>
   <div class="rastreio" [routerLink]="['/tracking']">
     <h3>Consultar Inscrição</h3>
@@ -5,9 +6,17 @@
 
   <div class="cadAluno" [routerLink]="['alunos/create']">
     <h3>Cadastrar Aluno</h3>
+        </div>
+
+  <div class="loginAluno"[routerLink]="['/login']">
+  <h3>Área do Aluno</h3>
+   </div>
+  <div class="loginAdm"[routerLink]="['/login_admin']">
+    <h3>Administrador</h3>
   </div>
 
-  <h1 [routerLink]="['']">Cursos</h1>
+
+  <h1 [routerLink]="['/']"></h1>
   <div class="logo_search">
     <div class="search">
       <input

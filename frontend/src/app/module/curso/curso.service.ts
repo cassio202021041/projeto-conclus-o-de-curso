@@ -139,4 +139,11 @@ export class CursoService {
   limpaCarrinho(){
     this.carrinho = [];
   }
+  getNomeAlunoById(id: number): Observable<string> {
+    return this.httpClient.get<string>(`${this.apiURL}alunos/${id}/nome`)
+      .pipe(
+        catchError(this.errorHandler)
+      );
+  }
+
 }

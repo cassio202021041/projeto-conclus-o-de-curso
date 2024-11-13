@@ -36,30 +36,20 @@
     </div>
    <h3>Valor doação: R$ {{this.valorCompra}}</h3>
     <div class="opcoes-pagamento">
-        <div [class.selecionado]="opcaoPagamento === 'boleto'" (click)="opcCompra('boleto')">
-            <img src="../../../../assets/images/boleto.png" alt="Boleto">
-            <h1>Boleto</h1>
-        </div>
-        <div [class.selecionado]="opcaoPagamento === 'cartao'" (click)="opcCompra('cartao')">
+                <div [class.selecionado]="opcaoPagamento === 'cartao'" (click)="opcCompra('cartao')">
             <img src="../../../../assets/images/cartao.png" alt="Cartão">
             <h1>Cartão</h1>
         </div>
-        <!-- Adicione este modal ao seu HTML existente -->
-<div class="modal" *ngIf="isImageOpen">
-  <div class="modal-content">
-    <span class="close" (click)="closeImage()">&times;</span>
+        <div [class.selecionado]="opcaoPagamento === 'pix'" >
+          <button (click)="openImage()"><img src="../../../../assets/images/pix.png" alt="Pix"></button>
+        </div>
+
+<div class="qr-modal" *ngIf="isImageOpen">
+  <div class="qr-modal-content">
+    <span class="qr-close" (click)="closeImage()">&times;</span>
     <img src="assets/images/qrcode.png" alt="QR Code">
   </div>
 </div>
-
-<!-- Exemplo de botão para abrir a imagem -->
-<button (click)="openImage()"><img src="../../../../assets/images/pix.png" alt="Pix"></button>
-
-
-        <!-- <div [class.selecionado]="opcaoPagamento === 'pix'" (click)="opcCompra('pix')">
-
-            <h1>Pix</h1>
-        </div> -->
     </div>
     <button class="green" (click)="efetuarCompra()"  [disabled]="!aluno">Inscrever Curso</button>
 </div>

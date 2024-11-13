@@ -1,4 +1,9 @@
+<app-header></app-header>
+<app-header1></app-header1>
+<app-nav1></app-nav1>
+<app-footer1></app-footer1>
 <div class="video-container">
+
   <div *ngFor="let video of videos" class="video-item">
     <h3>{{ video.title }}</h3>
     <iframe
@@ -12,3 +17,5 @@
   </div>
 </div>
 <button (click)="voltarParaHome()">Voltar</button>
+
+

@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
-main{
+
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
     margin-top: 2vw;
 }
-.carrinho:hover {
+
+.carrinho:hover,
+.add:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-
 @media (min-width: 767px) {
-    div{
+    div {
         display: flex;
         align-items: center;
+    }
 
+    div > * {
+        display: block;
     }
-    div> * {
-    display:block;
-    }
+
     .card {
         margin: auto;
         width: 60vw;
@@ -29,22 +32,27 @@ main{
         font-family: 'Lexend', sans-serif;
         font-size: 1.2vh;
     }
-    .card img{
+
+    .card img {
         display: block;
-        width: 25vw;
-        height: 25vw;
+        width: 23vw;
+        height: 23vw;
     }
-    .card h3{
+
+    .card h3,
+    .card h4,
+    .card h5 {
         font-size: 2vw;
     }
-    .card h4{
-        font-size: 2vw;
+
+    .card h4 {
         color: gray;
     }
-    .card h5{
-        font-size: 2vw;
+
+    .card h5 {
         color: #1f796c;
     }
+
     .card > * {
         margin-left: 1vw;
     }
@@ -60,48 +68,46 @@ main{
         border-radius: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         z-index: 999;
-      }
-      .carrinho img{
+    }
+
+    .carrinho img {
         width: 5vh;
         height: 5vh;
+    }
 
-      }
+    .add {
+        background-color: #1f796c;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        width: 15vw;
+        height: 3vw;
+        font-size: 0.5vw;
+    }
 
+    .voltar {
+        margin-right: 70%;
+        margin-bottom: 3vw;
+        background-color: #F4483C;
+        color: white;
+        width: 5vw;
+        height: 2.5vw;
+        font-size: 2vw;
+        border-radius: 1vw;
+        border-color: #F4483C;
+        margin-left: 2vw;
+        cursor: pointer;
+    }
 
-.add:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    .voltar img {
+        height: 90%;
+    }
+
+    input {
+        width: 4vw;
+    }
 }
-.add{
-    background-color: #1f796c;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 15vw;
-    height: 3vw;
-    font-size: 0.5vw;
-}
-.voltar{
-    margin-right: 70%;
-    margin-bottom: 3vw;
-    background-color: #F4483C;
-    color: white;
-    width: 5vw;
-    height: 2.5vw;
-    font-size: 2vw;
-    border-radius: 1vw;
-    border-color: #F4483C;
-    margin-left: 2vw;
-    cursor: pointer;
-   }
-   .voltar img{
-    height: 90%;
-   }
-   input{
-    width: 4vw;
-   }
-}
+
 @media (max-width: 767px) {
     .card {
         margin: auto;
@@ -109,25 +115,29 @@ main{
         height: 170vw;
         font-family: 'Lexend', sans-serif;
         font-size: 1.2vh;
-        font-family: 'Lexend', sans-serif;
     }
-    .card img{
+
+    .card img {
         margin: auto;
         display: block;
         width: 70vw;
         height: 70vw;
     }
-    .card h3{
+
+    .card h3,
+    .card h4,
+    .card h5 {
         font-size: 5vw;
     }
-    .card h4{
-        font-size: 5vw;
+
+    .card h4 {
         color: gray;
     }
-    .card h5{
-        font-size: 5vw;
+
+    .card h5 {
         color: #1f796c;
     }
+
     .card > * {
         margin-left: 1vw;
         margin-top: 1px;
@@ -144,52 +154,55 @@ main{
         border-radius: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         z-index: 999;
-      }
-      .carrinho img{
+    }
+
+    .carrinho img {
         width: 10vw;
         height: 10vw;
+    }
 
-      }
+    .add {
+        background-color: #1f796c;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        width: 60vw;
+        height: 15vw;
+        font-size: 2vw;
+        margin-top: 5vw;
+        margin-bottom: 3vw;
+        cursor: pointer;
+    }
 
+    .voltar {
+        background-color: #F4483C;
+        color: white;
+        width: 10vw;
+        height: 4vw;
+        font-size: 2vw;
+        border-radius: 1vw;
+        border-color: #F4483C;
+    }
 
-.add:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-.add{
-    background-color: #1f796c;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 60vw;
-    height: 15vw;
-    font-size: 2vw;
-    margin-top: 5vw;
-    margin-bottom: 3vw;
-    cursor:pointer;
-}
-.voltar{
-    background-color: #F4483C;
-    color: white;
-    width: 10vw;
-    height: 4vw;
-    font-size: 2vw;
-    border-radius: 1vw;
-    border-color: #F4483C;
-   }
-   .voltar img{
+    .voltar img {
         height: 90%;
-   }
-   input{
-    width: 8vw;
-   }
-   label{
-    font-size: 4vw;
-    margin-right: 4vw;
-   }
+    }
+
+    input {
+        width: 8vw;
+    }
+
+    label {
+        font-size: 4vw;
+        margin-right: 4vw;
+    }
 }
 
-#quantidade{
+#quantidade {
     margin-bottom: 2vw;
     margin-top: 1vw;
+}
+
+.h21{
+  font-size: 1.2vw;
 }

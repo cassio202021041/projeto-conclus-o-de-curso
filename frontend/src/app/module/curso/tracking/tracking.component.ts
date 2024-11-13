@@ -29,9 +29,9 @@ export class TrackingComponent implements OnInit{
     enviar() {
       this.carregar = true;
       this.vendaService.find(this.id).subscribe({
-        next: (data: Venda) => {
-          if (data && data.cursoVendas && data.cursoVendas.length > 0) {
-            this.venda = data;
+        next: (nome: Venda) => {
+          if (nome && nome.cursoVendas && nome.cursoVendas.length > 0) {
+            this.venda = nome;
             this.cursos = this.venda.cursoVendas;
             this.mensagemErro = '';
           } else {

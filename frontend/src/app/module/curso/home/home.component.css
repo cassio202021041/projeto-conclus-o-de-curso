@@ -88,11 +88,11 @@ main{
     width: 100%;
 }
 .imagens button{
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     margin:auto;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     background-color: white;
     border-radius: 20px;
     color: black;
@@ -137,12 +137,12 @@ main{
     margin-right: 2vw;
 }
 .right{
-    width: 3vw;
+    width: 2vw;
     height: auto;
 
 }
 .left{
-    width: 3vw;
+    width: 2vw;
     height: auto;
     transform: rotate(-180deg);
 
@@ -156,12 +156,12 @@ main{
 
 }
 .circle img{
-    width: 8vw;
+    width: 6vw;
     margin-top: 1vw;
 
 }
 .agrupa h4{
-    margin-left: 0vw;
+    margin-left: 1vw;
     font-size: 2vw;
 
 }
@@ -173,8 +173,8 @@ main{
 .faixa_vermelha button{
     background-color: white;
     border: none;
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     background-color: white;
     border-radius: 20px;
     color: black;

@@ -8,6 +8,7 @@ import { CursoVenda } from './cursovenda';
   providedIn: 'root'
 })
 export class VendaService {
+  [x: string]: any;
   private apiURL = "http://localhost:8080/";
 
 
