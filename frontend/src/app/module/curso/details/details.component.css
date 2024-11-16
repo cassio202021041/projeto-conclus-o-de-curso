@@ -76,8 +76,8 @@ main {
     }
 
     .add {
-        background-color: #1f796c;
-        color: white;
+        background-color: #4e1f77;
+        color: #f8c604;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         width: 15vw;
@@ -88,13 +88,13 @@ main {
     .voltar {
         margin-right: 70%;
         margin-bottom: 3vw;
-        background-color: #F4483C;
-        color: white;
+        background-color: #4e1f77;
+        color: #f8c604;
         width: 5vw;
         height: 2.5vw;
         font-size: 2vw;
         border-radius: 1vw;
-        border-color: #F4483C;
+        border-color: f8c604f8c604;
         margin-left: 2vw;
         cursor: pointer;
     }

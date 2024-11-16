@@ -188,6 +188,7 @@ input{
 }
 button{
     display: block;
+    color: #f8c604;
     height: 3vw;
     width: 8vw;
     font-size: 1.5vw;
@@ -244,7 +245,7 @@ input{
 }
 .mensagem-erro {
 
- color: red;
+ color: rgb(162, 0, 255);
   font-size: 1.2em;
   margin-top: 20px;
 }

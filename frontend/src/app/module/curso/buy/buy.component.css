@@ -62,11 +62,11 @@ input{
 
 }
 .payment{
-    color: #1f796c;
+    color: #000000;
 }
 .green{
-    background-color: #1f796c;
-    color: white;
+    background-color: #4e1f77;
+    color: #f8c604;
     width: 25vw;
     height: 5vw;
     font-size: 2vw;
@@ -128,13 +128,13 @@ input{
 }
 .voltar{
   margin-bottom: 3vw;
-  background-color: #F4483C;
-  color: white;
+  background-color: #4e1f77;
+  color: #f8c604;
   width: 10vw;
   height: 4vw;
   font-size: 2vw;
   border-radius: 1vw;
-  border-color: #F4483C;
+  border-color: #f8c604;
   margin-left: 2vw;
   cursor: pointer;
  }
