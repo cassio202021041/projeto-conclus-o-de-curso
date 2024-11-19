@@ -437,7 +437,7 @@ background-color: #acaeae;
 .pagamentoCartao input{
     background-color: #000000;
     border: none;
-    color: rgb(0, 0, 0);
+    color: rgb(180, 127, 216);
 
 }
 .pagamentoCartao input:focus {

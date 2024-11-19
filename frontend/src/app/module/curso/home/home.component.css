@@ -17,7 +17,7 @@ main{
 }
 @media (min-width: 768px) {
     .card {
-        width: 8vw;
+        width: 11vw;
         height: fit-content;
         font-family: 'Lexend', sans-serif;
         border-radius: 10px;
