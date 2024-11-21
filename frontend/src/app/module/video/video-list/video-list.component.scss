@@ -26,8 +26,8 @@
 }
 
 .container button {
-  background-color: #ff3b3b; /* Red background for delete button */
-  color: white; /* White text color */
+  background-color: #4e1f77; /* Red background for delete button */
+  color: #f8c604; /* White text color */
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
   padding: 0.5em 1em; /* Padding for buttons */
@@ -35,14 +35,14 @@
 }
 
 .container button:hover {
-  background-color: #d63030; /* Darker red on hover */
+  background-color: #4e1f77;
 }
 
 .container button[type="submit"] {
-  background-color: #1e0fa8; /* Different color for back button */
-  margin-top: 1em; /* Margin above the button */
+  background-color: #4e1f77;
+  margin-top: 1em;
 }
 
 .container button[type="submit"]:hover {
-  background-color: #1c1b8a; /* Darker color on hover */
+  background-color: #4e1f77; 
 }

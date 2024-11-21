@@ -32,8 +32,8 @@ input:focus {
 }
 
 button {
-  background-color: #1e0fa8; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #4e1f77; /* Button background color */
+  color: #f8c604; /* Button text color */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
   padding: 0.5em 1em; /* Button padding */
@@ -42,14 +42,15 @@ button {
 }
 
 button:hover {
-  background-color: #1c1b8a; /* Darker color on hover */
+  background-color: #aa16cf; /* Darker color on hover */
 }
 
 button[type="button"] {
-  background-color: #ff3b3b; /* Cancel button color */
+  background-color: #4e1f77; /* Cancel button color */
+  color: #f8c604;
   margin-left: 1em; /* Space between buttons */
 }
 
 button[type="button"]:hover {
-  background-color: #d63030; /* Darker red on hover */
+  background-color: #4e1f77; /* Darker red on hover */
 }

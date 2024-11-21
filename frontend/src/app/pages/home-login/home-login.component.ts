@@ -37,10 +37,10 @@ export class HomeLoginComponent implements OnInit {
   }
 
   admin() {
-    if (this.email === 'admin@cursogratuito.com' && this.senha === 'admin') {
+    if (this.email === 'admin@admin' && this.senha === 'admin') {
       this.router.navigate(['admin']);
     } else {
-      alert('Email do Administrador inválido!\n Tente novamente mais tarde' );
+      alert('Email do Administrador inválido!\n Tente novamente' );
     }
   }
 }

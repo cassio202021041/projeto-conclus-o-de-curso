@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 .compra{
-    border: 1px solid black;
+    border: 1px solid #f8c604;
     margin: auto;
     width: 30vw;
     margin-bottom: 2vw;
@@ -41,12 +41,13 @@ input{
 }
 button{
     display: block;
+    color:#f8c604;
     height: 3vw;
     width: 8vw;
     font-size: 1.5vw;
-    background-color: #5b219e;
+    background-color: #4e1f77;
     border-radius: 5px;
-    border-color: #ddd8e2;
+    border-color: #f8c604;
     margin-left: 10.8vw;
     margin-top: 1vw;
     margin-bottom: 2vw;
@@ -58,7 +59,7 @@ button{
     margin-left: 15vw;
 }
 .card h4{
-    color: black;
+    color: #f8c604;
 }
 @media (max-width: 767px) {
   .compra{

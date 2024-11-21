@@ -24,6 +24,7 @@ import { AdminHomeComponent } from './module/admin/admin-home/admin-home.compone
 import { LoginComponent } from './pages/login/login.component';
 import { HomeLoginComponent } from './pages/home-login/home-login.component';
 import { PrincipalComponent } from './pages/compartilhado/principal/principal.component';
+import { NavComponent } from './module/video/template/nav/nav1.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -52,7 +53,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'login_admin', component: HomeLoginComponent },
   { path: 'pc', component: PrincipalComponent },
-  { path: '**', redirectTo: '' },
+  { path: 'nav', component: NavComponent},
+    { path: '**', redirectTo: '' },
   { path: 'add', component: VideoFormComponent },
 ];
 

@@ -70,12 +70,12 @@ main{
 button{
     height: 3vw;
     width: 10vw;
-    color: white;
+    color: yellow;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1vw;
     margin-left: 1vw;
-    background-color: #F4483C;
+    background-color: #a215a7;
 }
 }
 @media (max-width: 767px) {
@@ -133,7 +133,7 @@ button{
     button{
         height: 4vw;
         width: 10vw;
-        color: white;
+        color: rgb(250, 192, 0);
         border-radius: 10px;
         cursor: pointer;
         font-size: 1vw;

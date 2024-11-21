@@ -3,6 +3,19 @@ header{
     box-shadow: 0px 15px 10px -15px #111;
     font-family: 'Lexend', sans-serif;
 }
+.imagens button{
+  width: 5vw;
+  height: 5vw;
+  margin:auto;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 div{
     display: block;
     align-items: center;
@@ -31,15 +44,18 @@ header h1{
 }
 
 .rastreio{
-    position: absolute;
-    top: 3.5vw;
-    left: 2vw;
-    display: flex;
-    color: #030e24;
-    width: fit-content;
-    height: 6.2vw;
-    margin-top: 1vw;
-    cursor: pointer;
+  border-radius: 10px;
+  margin-right: 1vw;
+  position: absolute;
+  top: 0vw;
+  left: 6.2vw;
+  display: flex;
+  color: #ffffff;
+  width: fit-content;
+  height: 4vw;
+  margin-top: 1vw;
+  cursor: pointer;
+
 }
 .rastreio img{
   border-radius: 10px;
@@ -48,18 +64,46 @@ header h1{
 }
 .cadAluno{
   position: absolute;
-  top: 4.5vw;
-  left: 80vw;
+    top: 0vw;
+    left: 22vw;
+    display: flex;
+    color: #ffffff;
+    width: fit-content;
+    height: 4vw;
+    margin-top: 1vw;
+    cursor: pointer;
+
+}
+.cadAluno img{
+  border-radius: 10px;
+  margin-right: 1vw;
+}
+.loginAdm{
+  border-radius: 10px;
+  margin-right: 1vw;
+  position: absolute;
+  top: 0vw;
+  left: 87vw;
   display: flex;
-  color: #030e24;
+  color: #ffffff;
   width: fit-content;
   height: 4vw;
   margin-top: 1vw;
   cursor: pointer;
 }
-.cadAluno img{
+.loginAluno {
   border-radius: 10px;
-  margin-right: 1vw;
+    margin-right: 1vw;
+    position: absolute;
+    top: 0vw;
+    left: 75vw;
+    display: flex;
+    color: #ffffff;
+    width: fit-content;
+    height: 4vw;
+    margin-top: 1vw;
+    cursor: pointer;
+
 }
 .sale{
     width: 100%;
@@ -97,6 +141,7 @@ header h1{
     color: #fff;
     border: none;
     font-size: 1.5vw;
+
 }
 @media (min-width: 768px) {
 header {
@@ -141,6 +186,10 @@ img{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-right: 3vw;
     width: 40%;
+    position: relative;
+    top: 1.5vw;
+
+
 }
 h3{
     margin-right: 2vw;
